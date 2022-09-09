@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+</head>
+<body>
+    <!-- <img srcset="images/img.jpeg 1x , images/girlimgverylow.jpg 2x ,images/girlimgmedium.jpg 3x" 
+    src="images/girlimg.jpg" alt="girl photo" height="1000" width="100%"> -->
+
+
+    <!-- art direction problem 
+         Art Direction Problem involves displaying a different images for different screen sizes focussing on the important
+        part of the image rather than just changing the resolution of the image-->
+        
+
+        <!-- SRCSET and SIZES  
+            <img srcset="img1 400w , img2 600w" alt="girl in a jacket"
+        sizes = "sizes=*(maxwidth400px) 400px (maxwidth600px) 600px,800 px" src"img">-->
+
+        <img srcset="images/girllaptop.jpg 1000w , images/girltablet.jpg 800w , images/girlphone 500w"
+        sizes="(max-width:500px)500px , (max-width:800px) 800px,1000px" 
+        src="images/girlimg.jpg" alt="girl photo" width="100%">
+</body>
+</html>
