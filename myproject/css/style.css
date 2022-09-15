@@ -1,0 +1,122 @@
+/*CSS RESET*/
+/* css reset mtlb boundary ko margin dedi default font de diya */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS variables */
+
+:root{
+    --navbar-height:59px;
+}
+/* The position property specifies the type of positioning method used for an element 
+(static, relative, fixed, absolute or sticky). */
+
+/*position: static;
+HTML elements are positioned static by default.
+Static positioned elements are not affected by the top, bottom, left, and right properties. */
+
+/*position: relative;
+An element with position: relative; is positioned relative to its normal position.*/
+
+/*
+
+position: fixed;
+An element with position: fixed; is positioned relative to the viewport, which means it always 
+stays in the same place even if the page is scrolled. The top, right, bottom, and left
+properties are used to position the element.*/
+
+/*
+position: absolute;
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+position: sticky;
+An element with position: sticky; is positioned based on the user's scroll position.
+*/
+
+/*Navigation Bar*/
+#navbar{
+    position: relative;
+}
+#navbar{
+    display: flex;
+    align-items:center;
+}
+/* navigation bar:logo and image */
+/* navigation bar:list styling */
+#logo{
+    margin:10px 34px;
+}
+#logo img{
+    height: 49px;
+    margin: 3px 5px;
+}
+#navbar ul{
+    /*  to display as lines */
+    display:flex;    
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+/*The z-index property specifies the stack order of an element.
+The z-index Property
+When elements are positioned, they can overlap other elements.
+The z-index property specifies the stack order of an element (which element should be placed 
+in front of, or behind, the others).
+An element can have a positive or negative stack order:
+This is a headingBecause the image has a z-index of -1, it will be placed behind the text.*/
+    z-index: -1;
+
+    /* The opacity property can take a value from 0.0 - 1.0. The lower the value, the more transparent: */
+    opacity: 0.4;
+}
+#navbar ul li{
+    /* used to remove circles comes in left of the words */
+    list-style: none;
+
+    /* to give font style */
+    font-style: italic;
+}
+#navbar ul li a{
+
+    color: black;
+    display: block;
+    /* to give some spaces between words */
+    padding-right: 20px;
+    /* to give curve  */
+    border-radius: 20px;
+
+    /* used to remove underline which comes below of the words */
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:pink;
+    background-color:whitesmoke;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* read before pseudo selectors */
+
+#home::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+    background: url('C:\Users\kanah\OneDrive\Desktop\webdevelopment\myproject\images\bg.jpg') no-repeat center center/cover;
+}
