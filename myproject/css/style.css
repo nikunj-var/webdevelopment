@@ -36,22 +36,16 @@ position: sticky;
 An element with position: sticky; is positioned based on the user's scroll position.
 */
 
-/*Navigation Bar*/
-#navbar{
-    position: relative;
+html{
+    scroll-behavior: smooth;
 }
+/*Navigation Bar*/
+
 #navbar{
     display: flex;
     align-items:center;
-}
-/* navigation bar:logo and image */
-/* navigation bar:list styling */
-#logo{
-    margin:10px 34px;
-}
-#logo img{
-    height: 49px;
-    margin: 3px 5px;
+    position:relative;
+    top: 0px;
 }
 #navbar ul{
     /*  to display as lines */
@@ -62,6 +56,8 @@ An element with position: sticky; is positioned based on the user's scroll posit
     background-color: black;
     height: 100%;
     width: 100%;
+    top: 0px;
+    left:0px;
     position:absolute;
 /*The z-index property specifies the stack order of an element.
 The z-index Property
@@ -74,6 +70,15 @@ This is a headingBecause the image has a z-index of -1, it will be placed behind
 
     /* The opacity property can take a value from 0.0 - 1.0. The lower the value, the more transparent: */
     opacity: 0.4;
+}
+/* navigation bar:logo and image */
+/* navigation bar:list styling */
+#logo{
+    margin:10px 34px;
+}
+#logo img{
+    height: 49px;
+    margin: 3px 5px;
 }
 #navbar ul li{
     /* used to remove circles comes in left of the words */
@@ -99,6 +104,7 @@ This is a headingBecause the image has a z-index of -1, it will be placed behind
     background-color:whitesmoke;
 }
 
+
 /* Home Section */
 
 #home{
@@ -107,6 +113,7 @@ This is a headingBecause the image has a z-index of -1, it will be placed behind
     padding:3px 200px;
     align-items: center;
     justify-content: center;
+    height: 600px;
 }
 
 /* read before pseudo selectors */
@@ -114,9 +121,67 @@ This is a headingBecause the image has a z-index of -1, it will be placed behind
 #home::before{
     content: "";
     position: absolute;
-    height: 100%;
+    height: 700px;
     width: 100%;
     opacity: 0.4;
     z-index: -1;
-    background: url('C:\Users\kanah\OneDrive\Desktop\webdevelopment\myproject\images\bg.jpg') no-repeat center center/cover;
+    top:0px;
+    left:0px;
+    background: url('../images/bg.jpg') no-repeat center center/cover;
 }
+
+#home h1{
+    color: brown;
+    text-align: center;
+}
+
+#home p{
+    color: black;
+    text-align: center;
+    font-size: medium;
+    font-style: oblique
+}
+#services{
+    margin:34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+#services .box img{
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+/* utiltiy classes */
+.h-primary{
+    font-size: xx-large;
+    padding: 12px;
+}
+/* Services Section */
+
+.h-secondary{
+    /* font-size: large; */
+    padding: 12px;
+}
+
+
+.btn{
+    padding: 6px 20px;
+    border:2px white;
+    background-color: brown;
+    color:white;
+    margin: 17px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+

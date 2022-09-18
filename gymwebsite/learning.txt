@@ -1,0 +1,2 @@
+//agr margin auto ki help se kisi bhi chij ko cemter krna h to teen condition hoti h 
+    display ko block kro width ko set karo and margin ko auto

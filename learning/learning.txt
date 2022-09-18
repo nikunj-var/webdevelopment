@@ -1,0 +1,152 @@
+*Selectors
+    A CSS selector selects the HTML element(s) you want to style.
+
+*We can divide CSS selectors into five categories:
+
+    Simple selectors (select elements based on name, id, class)
+    Combinator selectors (select elements based on a specific relationship between them)
+    Pseudo-class selectors (select elements based on a certain state)
+    Pseudo-elements selectors (select and style a part of an element)
+    Attribute selectors (select elements based on an attribute or attribute value)
+
+*The CSS element Selector
+    The element selector selects HTML elements based on the element name.
+*The CSS id Selector
+    The id selector uses the id attribute of an HTML element to select a specific element.
+    The id of an element is unique within a page, so the id selector is used to select one unique element!
+
+To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+
+*The CSS class Selector
+    The class selector selects HTML elements with a specific class attribute.
+
+To select elements with a specific class, write a period (.) character, followed by the class name.
+
+*The CSS Universal Selector
+    The universal selector (*) selects all HTML elements on the page.
+
+*The CSS Grouping Selector
+    The grouping selector selects all the HTML elements with the same style definitions. 
+
+*When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.
+
+Three Ways to Insert CSS
+There are three ways of inserting a style sheet:
+
+    External CSS
+    Internal CSS
+    Inline CSS
+
+*External CSS
+    With an external style sheet, you can change the look of an entire website by changing just one file!
+
+    Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section.       
+
+*Internal CSS
+    An internal style sheet may be used if one single HTML page has a unique style.
+
+    The internal style is defined inside the <style> element, inside the head section.
+
+*Inline CSS
+    An inline style may be used to apply a unique style for a single element.
+
+    To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+
+*Multiple Style Sheets
+    If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.   
+*inline style has higher priority as compare to internal and external      
+
+*CSS Comments
+    CSS comments are not displayed in the browser, but they can help document your source code.
+
+*CSS Colors
+    Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.  
+
+    *An RGB color value represents RED, GREEN, and BLUE light sources.
+        RGB Value       In CSS, a color can be specified as an RGB value, using this formula:
+        rgb(red, green, blue)
+        Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.
+        For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.
+        To display black, set all color parameters to 0, like this: rgb(0, 0, 0).
+        To display white, set all color parameters to 255, like this: rgb(255, 255, 255).  
+    *RGBA Value
+    RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.
+        An RGBA color value is specified with:
+        rgba(red, green, blue, alpha)
+        The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at al      
+
+    *CSS HEX Colors
+    A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.
+        HEX Value
+        In CSS, a color can be specified using a hexadecimal value in the form:
+        #rrggbb
+        Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).
+        For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00).
+        To display black, set all values to 00, like this: #000000.
+        To display white, set all values to ff, like this: #ffffff.  
+
+    3 Digit HEX Value
+        Sometimes you will see a 3-digit hex code in the CSS source.
+        The 3-digit hex code is a shorthand for some 6-digit hex codes.
+        The 3-digit hex code has the following form:
+        #rgb
+        Where r, g, and b represent the red, green, and blue components with values between 0 and f.
+        The 3-digit hex code can only be used when both the values (RR, GG, and BB) are the same for each component. So, if we have #ff00cc, it can be written like this: #f0c.    
+
+*CSS Backgrounds
+    The CSS background properties are used to add background effects for elements.
+    In these chapters, you will learn about the following CSS background properties:
+        background-color
+        background-image
+        background-repeat
+        background-attachment
+        background-position
+        background (shorthand property)
+
+Opacity / Transparency
+    The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent:
+ 
+*CSS Background Image
+    CSS background-image
+    The background-image property specifies an image to use as the background of an element.
+By default, the image is repeated so it covers the entire element.
+
+*CSS background-repeat
+    By default, the background-image property repeats an image both horizontally and vertically.
+    Some images should be repeated only horizontally or vertically, or they will look strange, like this:
+    If the image above is repeated only horizontally (background-repeat: repeat-x;)
+    To repeat an image vertically, set background-repeat: repeat-y;
+    CSS background-repeat: no-repeat
+    Showing the background image only once is also specified by the background-repeat property
+
+*CSS background-attachment
+    The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page):    
+
+*CSS background - Shorthand property
+To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.
+
+Instead of writing:
+
+body {
+  background-color: #ffffff;
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+You can use the shorthand property background:
+
+Example
+Use the shorthand property to set the background properties in one declaration:
+
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
+When using the shorthand property the order of the property values is:
+
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+
+*
