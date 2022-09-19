@@ -149,4 +149,171 @@ background-repeat
 background-attachment
 background-position
 
-*
+*CSS Borders
+    The CSS border properties allow you to specify the style, width, and color of an element's border.
+
+CSS Border Style
+The border-style property specifies what kind of border to display.
+
+The following values are allowed:
+
+dotted - Defines a dotted border
+dashed - Defines a dashed border
+solid - Defines a solid border
+double - Defines a double border
+groove - Defines a 3D grooved border. The effect depends on the border-color value
+ridge - Defines a 3D ridged border. The effect depends on the border-color value
+inset - Defines a 3D inset border. The effect depends on the border-color value
+outset - Defines a 3D outset border. The effect depends on the border-color value
+none - Defines no border
+hidden - Defines a hidden border    
+
+CSS Border Width
+    The border-width property specifies the width of the four borders.
+
+The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick:
+
+
+CSS Border - Individual Sides
+    From the examples on the previous pages, you have seen that it is possible to specify a different border for each side.
+
+In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left):
+
+CSS Border - Shorthand Property
+    Like you saw in the previous page, there are many properties to consider when dealing with borders.
+
+    To shorten the code, it is also possible to specify all the individual border properties in one property.
+
+The border property is a shorthand property for the following individual border properties:
+
+border-width
+border-style (required)
+border-color
+
+CSS Rounded Borders
+    The border-radius property is used to add rounded borders to an element.
+
+CSS Margins
+    Margins are used to create space around elements, outside of any defined borders.  With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).
+
+Margin - Individual Sides
+CSS has properties for specifying the margin for each side of an element:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+
+Margin - Shorthand Property
+To shorten the code, it is possible to specify all the margin properties in one property.
+
+*The margin property is a shorthand property for the following individual margin properties:
+    margin-top
+    margin-right
+    margin-bottom
+    margin-left
+So, here is how it works:*
+
+*If the margin property h   as four values:
+
+    margin: 25px 50px 75px 100px;
+    top margin is 25px
+    right margin is 50px
+    bottom margin is 75px
+    left margin is 100px
+
+*Margin Collapse
+    Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
+
+    This does not happen on left and right margins! Only top and bottom margins!    
+
+*CSS Padding
+    Padding is used to create space around an element's content, inside of any defined borders.    
+
+
+//Important
+The CSS max-width property is used to set the maximum width of an element.    
+
+The problem with the <div> above occurs when the browser window is smaller than the width of the element (500px). The browser then adds a horizontal scrollbar to the page.
+
+Using max-width instead, in this situation, will improve the browser's handling of small windows.
+
+The CSS Box Model
+    In CSS, the term "box model" is used when talking about design and layout.
+
+    The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
+CSS Outline
+An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".
+
+CSS has the following outline properties:
+
+outline-style
+outline-color
+outline-width
+outline-offset
+outline
+Note: Outline differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline.
+
+
+CSS Outline Style
+The outline-style property specifies the style of the outline, and can have one of the following values:
+
+dotted - Defines a dotted outline
+dashed - Defines a dashed outline
+solid - Defines a solid outline
+double - Defines a double outline
+groove - Defines a 3D grooved outline
+ridge - Defines a 3D ridged outline
+inset - Defines a 3D inset outline
+outset - Defines a 3D outset outline
+none - Defines no outline
+hidden - Defines a hidden outline    
+
+*CSS Outline Offset
+    The outline-offset property adds space between an outline and the edge/border of an element. The space between an element and its outline is transparent.
+
+*CSS text
+    -text color
+    -text alignment
+    -
+
+*Text Alignment
+The text-align property is used to set the horizontal alignment of a text.
+
+A text can be left or right aligned, centered, or justified.
+
+The following example shows center aligned, and left and right aligned text (left alignment is default if text direction is left-to-right, and right alignment is default if text direction is right-to-left).
+
+//Important
+text-align:justify
+When the text-align property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers):
+
+*Text Direction
+The direction and unicode-bidi properties can be used to change the text direction of an element:
+
+Example
+p {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+*Add a Decoration Line to Text
+The text-decoration-line property is used to add a decoration line to text.
+
+Tip: You can combine more than one value, like overline and underline to display lines both over and under a text.
+EX-
+h1 {
+  text-decoration-line: overline;
+}
+
+h2 {
+  text-decoration-line: line-through;
+}
+
+h3 {
+  text-decoration-line: underline;
+}
+
+p {
+  text-decoration-line: overline underline;
+}

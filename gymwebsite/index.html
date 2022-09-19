@@ -8,33 +8,89 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <style>
-body{
-    margin: 0px;
-    padding: 0px;
-    width: 800px;
-    background: url('../images/img.jpg');   
-}
-
+    body{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(./images/img.jpg);
+        background-size: cover;
+    }
+    .left{
+        position: absolute;
+        top:10px;
+        left:34px;
+        display: inline-block;
+    }
+    .left img{
+        width: 120px;
+    }
+    .left div{
+        text-align: center;
+    }
+    .mid{
+        display: block;
+        width: 33%;
+        margin: 12px auto;
+    }
+    .right{
+        position: absolute;
+        right:34px;
+        top:10px;
+        display: inline-block;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a{
+        color:white;
+        text-decoration: none;
+        padding: 20px;
+        font-style: italic;
+    }
+    .navbar li a:hover{
+        text-decoration-line: underline;
+        color: black;
+        background-color: transparent;
+    }
+    .btn{
+        color:white;
+        margin:10px 9px;
+        border: 2px solid black;
+        padding: 4px 14px;
+        border-radius: 10px;
+        background-color: transparent;
+        font-size: small;
+        cursor: pointer;
+    }
+    .btn:hover {
+        color: black;
+        background-color: white;
+    }
 </style>
 <body>
-    <!-- <img src="C:\Users\kanah\OneDrive\Desktop\webdevelopment\gymwebsite\images\img.jpg" width="100%"> -->
     <header class="header">
-        <!-- left box for logo -->
         <div class="left">
-           
+            <img src="./images/logo.jpg" alt="logo">
+            <div>FitnessGYM</div>
         </div>
-        <!-- mid box for navbar -->
         <div class="mid">
             <ul class="navbar">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">FitnessContactor</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">AboutUs</a></li>
+                <li><a href="">FitnessChart</a></li>
+                <li><a href="">ContactUs</a></li>
             </ul>
         </div>
-        <!-- right box for navigations -->
         <div class="right">
-            i am right
+            <button class="btn">
+                callUsNow
+            </button>
+            <button class="btn">
+                emailUs
+            </button>
         </div>
     </header>
 </body>

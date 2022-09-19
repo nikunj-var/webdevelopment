@@ -10,7 +10,9 @@
     *{
         background-color: aqua;
     }
-    p{
+    p{  
+        border-style: dashed;
+        border-color: black;
         color:pink;
         text-align: center;
     }
@@ -22,9 +24,46 @@
     }
 
     /* i am a group selector */
-    p , h1{
+    /* p , h1{
+        background-color: rgb(43, 226, 92);
+    } */
+    .margind{
+        color:black;
+        margin:50px;
+    }
+    .pad{
+        padding: 30px;
+        border: medium;
+        border-radius: 50%;
+        border-style:inset;
+        border-color: brown;
+    }
+    div{
+        max-width: 4000px;
+        height: 100px;
+        border: medium;
+        color: brown;
         background-color: blueviolet;
     }
+    img.a {
+  vertical-align: baseline;
+}
+
+img.b {
+  vertical-align: text-top;
+}
+
+img.c {
+  vertical-align: text-bottom;
+}
+
+img.d {
+  vertical-align: sub;
+}
+
+img.e {
+  vertical-align: super;
+}
 </style>
 <body>
     <h1>This is my learning page</h1>
@@ -37,5 +76,28 @@
     <p class="p">
         this is my third para with class 
     </p>
+    <p class="margind">i am a paragraph with margin</p>
+    <p class="pad">i am a pargraph with padding</p>
+
+    <div class="widt">i am paragraph inside a div container</div>
+
+    
+<h1>The vertical-align Property</h1>
+
+<h2>vertical-align: baseline (default):</h2>
+<p>An <img class="a" src="C:\Users\kanah\OneDrive\Desktop\webdevelopment\learning\food1.jpg" width="50" height="50"> image with a default alignment.</p> 
+
+<h2>vertical-align: text-top:</h2>
+<p>An <img class="b" src="C:\Users\kanah\OneDrive\Desktop\webdevelopment\learning\food1.jpg" width="50" height="50"> image with a text-top alignment.</p> 
+
+<h2>vertical-align: text-bottom:</h2>
+<p>An <img class="c" src="C:\Users\kanah\OneDrive\Desktop\webdevelopment\learning\food1.jpg" width="20" height="50"> image with a text-bottom alignment.</p>
+
+<h2>vertical-align: sub:</h2>
+<p>An <img class="d" src="C:\Users\kanah\OneDrive\Desktop\webdevelopment\learning\food1.jpg" width="50" height="50"> image with a sub alignment.</p> 
+
+<h2>vertical-align: sup:</h2>
+<p>An <img class="e" src="C:\Users\kanah\OneDrive\Desktop\webdevelopment\learning\food1.jpg" width="50" height="50"> image with a super alignment.</p>
+
 </body>
 </html>
