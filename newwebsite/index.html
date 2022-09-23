@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarberSHop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="banner">
+        <img src="./images/blogo.png" class="logo">
+        <div class="banner-text">
+            <h1>
+                Hair Studio
+            </h1>
+            <p>
+                Style Your Hair is Style your life
+            </p>
+            <div class="banner-btn">
+                <a href=""><span></span>Find Us</a>
+                <a href=""><span></span>Read More</a>
+            </div>
+        </div>
+    </section>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Testimonials</a></li>
+                <li><a href="">ContactUs</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="./images/menuimg.png" id="menu">
+    </div>
+    <script>
+        var menuBtn=document.getElementById("menubtn")
+        var sideNav=document.getElementById("sidenav")
+        var menu=document.getElementById("menu")
+        sideNav.style.right="-250px";
+        menuBtn.onclick=function(){
+            if(sideNav.style.right == "-250px")
+                sideNav.style.right="0";
+            else
+                sideNav.style.right="-250px";
+        }
+    </script>
+</body>
+</html>
