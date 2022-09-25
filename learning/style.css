@@ -2,3 +2,59 @@ p{
     background-color: grey;
     opacity: 0.6;
 }
+
+body{
+    height: 10000px;
+}
+.box1{
+    border: 2px solid black;
+    position: static;
+}
+.box2{
+    margin:100px;
+    height: 100px;
+    border: 2px solid grey;
+    position: relative;
+    left:50px;
+}
+.box3{
+    position: absolute;
+    border: 6px solid green;
+    left:40px;
+    right:40px;
+
+}
+
+.static{
+    position:static;
+    margin:50px;
+    border: 2px solid black;
+}
+
+.relative{
+    position:relative;
+    width: 400px;
+    height:400px;
+    border: 2px solid black;
+}
+
+.absolute{
+    border:2px solid black;
+    width:200px;
+    height:200px;
+    position:absolute;
+    right:0px;
+}
+
+.fixed{
+    width:900px;
+    position: fixed;
+    margin:20px;
+    border: 2px solid black;
+}
+
+.sticky{
+    position:sticky;
+    top:0px;
+    border: 2px solid black;
+}
