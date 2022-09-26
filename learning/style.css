@@ -1,11 +1,4 @@
-p{
-    background-color: grey;
-    opacity: 0.6;
-}
 
-body{
-    height: 10000px;
-}
 .box1{
     border: 2px solid black;
     position: static;
@@ -34,7 +27,7 @@ body{
 .relative{
     position:relative;
     width: 400px;
-    height:400px;
+    height:300px;
     border: 2px solid black;
 }
 
