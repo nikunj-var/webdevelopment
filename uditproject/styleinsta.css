@@ -1,0 +1,117 @@
+body{
+    background-color:whitesmoke;
+}
+.box{
+    border:0.5px solid lightgrey;
+    height:450px;
+    width: 370px;
+    background-color: white;
+    position: absolute;
+    top:30px;
+    left: 580px;
+}
+h1{
+    color:black;
+    text-align: center;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    position: absolute;
+    top:6px;
+    left:76px;
+    font-size: 50px;
+}
+
+.innerbox1{
+    height:35px;
+    width:280px;
+    background-color: whitesmoke;
+}
+#b1{
+    position: absolute;
+    top:140px;
+    left:40px;
+}
+#b2{
+    position: absolute;
+    top:180px;
+    left:40px;
+}
+
+h7{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color:grey;
+    position: absolute;
+    top:6px;
+    left:4px;
+}
+h7 div{
+    background-color: black;
+    height:20px;
+    width:1px;
+    position: absolute;
+    left:1px;
+}
+.innerbox2{
+    height:30px;
+    width:280px;
+    border-radius: 6px;
+    background-color: rgb(175, 220, 248);
+    position: absolute;
+    top:230px;
+    left:40px;
+}
+h3{
+    color: white;
+    position: absolute;
+    top:-14px;
+    left:115px;
+}
+h5{
+    color:rgb(193, 187, 187);
+    position: absolute;
+    bottom:137px;
+    left:165px;
+}
+h2{
+    color:darkblue;
+    font-size: 22px;
+    position:absolute;
+    bottom:80px;
+    left:82px;
+}
+.line{
+    height:2px;
+    width:100px;
+    background-color: rgb(232, 229, 229);
+}
+#l1{
+    position: absolute;
+    bottom:165px;
+    left:40px;
+}
+#l2{
+    position: absolute;
+    bottom:165px;
+    left:215px;
+}
+h4{
+    color:black;
+    position: absolute;
+    left:110px;
+    bottom: 20px;
+}
+.box2{
+    border:0.5px solid lightgrey;
+    height:70px;
+    width:370px;
+    background-color: white;
+    position: absolute;
+    top:490px;
+    left: 580px;
+}
+.box2text{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color:black;
+    position: absolute;
+    top:28px;
+    left:65px;
+}
