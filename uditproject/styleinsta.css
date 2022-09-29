@@ -3,80 +3,110 @@ body{
 }
 .box{
     border:0.5px solid lightgrey;
-    height:450px;
-    width: 370px;
+    height:415px;
+    width: 340px;
     background-color: white;
     position: absolute;
     top:30px;
     left: 580px;
 }
-h1{
-    color:black;
-    text-align: center;
-    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+.box2{
+    border:0.5px solid lightgrey;
+    height:70px;
+    width:340px;
+    background-color: white;
     position: absolute;
-    top:6px;
-    left:76px;
-    font-size: 50px;
+    top:460px;
+    left: 580px;
 }
-
+.box2text{
+    font-size: medium;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:black;
+    position: absolute;
+    top:24px;
+    left:65px;
+}
+span{
+    color: blue;
+}
+.image{
+    background: url(./images/insta.jpg);
+    height: 83px;
+    width: 246px;
+    background-size: cover;
+    position: absolute;
+    top:40px;
+    left:43px;
+}
+.app{
+    height:30px;
+    width:100px;
+    position: absolute;
+    left:710px;
+    bottom:180px;
+    color:black;
+    font-size: 14px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
 .innerbox1{
     height:35px;
     width:280px;
+    border:1px solid lightgray;
     background-color: whitesmoke;
 }
 #b1{
     position: absolute;
-    top:140px;
+    top:160px;
     left:40px;
 }
 #b2{
     position: absolute;
-    top:180px;
+    top:200px;
     left:40px;
 }
 
-h7{
-    /* font-family: Arial, Helvetica, sans-serif; */
-    color:grey;
-    position: absolute;
-    top:6px;
-    left:4px;
-}
-h7 div{
-    background-color: black;
+.innertext{
+    color:rgba(var(--i1d,38,38,38),1);
     height:20px;
-    width:1px;
+    width:250px;
+    font-size: 14px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     position: absolute;
-    left:1px;
+    top:8px;
+    left:6px;
 }
 .innerbox2{
     height:30px;
     width:280px;
-    border-radius: 6px;
-    background-color: rgb(175, 220, 248);
+    border-radius: 4px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background-color: rgb(187, 223, 245);
     position: absolute;
-    top:230px;
+    top:250px;
     left:40px;
 }
-h3{
+.login{
     color: white;
     position: absolute;
-    top:-14px;
+    top:2px;
     left:115px;
 }
-h5{
-    color:rgb(193, 187, 187);
+.or{
+    font-size: small;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:rgb(143, 142, 142);
     position: absolute;
-    bottom:137px;
-    left:165px;
+    bottom:110px;
+    left:160px;
 }
-h2{
+.facebook{
     color:darkblue;
-    font-size: 22px;
+    font-size: medium;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     position:absolute;
-    bottom:80px;
-    left:82px;
+    bottom:75px;
+    left:110px;
 }
 .line{
     height:2px;
@@ -85,33 +115,71 @@ h2{
 }
 #l1{
     position: absolute;
-    bottom:165px;
+    bottom:120px;
     left:40px;
 }
 #l2{
     position: absolute;
-    bottom:165px;
+    bottom:120px;
     left:215px;
 }
-h4{
+.password{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: small;
     color:black;
     position: absolute;
-    left:110px;
-    bottom: 20px;
+    left:120px;
+    bottom: 30px;
 }
-.box2{
-    border:0.5px solid lightgrey;
-    height:70px;
-    width:370px;
-    background-color: white;
+
+.lastsecondline{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:grey;
+    font-size: small;
     position: absolute;
-    top:490px;
-    left: 580px;
+    bottom:70px;
+    left:350px;
 }
-.box2text{
-    /* font-family: Arial, Helvetica, sans-serif; */
-    color:black;
+.lastline{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:grey;
+    font-size: small;
     position: absolute;
-    top:28px;
-    left:65px;
+    bottom:40px;
+    left:650px;
+}
+.fblogo{
+    background:url(./images/fb.png);
+    height:15px;
+    width:15px;
+    background-size: cover;
+    position: absolute;
+    bottom:75px;
+    left:87px;
+}
+.twoimage{
+    float: left;
+    height:50px;
+    width:300px;
+    position:absolute;
+    bottom:130px;
+    left:600px;
+}
+.img1
+{
+    background: url(./images/dwnld.png);
+    background-size: cover;
+    height:40px;
+    width:140px;
+    position: absolute;
+    left:5px;
+}
+.img2
+{
+    background: url(./images/gpay.jpg);
+    background-size: cover;
+    height:40px;
+    width:140px;
+    position: absolute;
+    right:5px;
 }
