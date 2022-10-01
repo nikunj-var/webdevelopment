@@ -1,3 +1,7 @@
+body{
+    background-color:whitesmoke;
+}
+
 form{
     border:0.5px solid lightgrey;
     height:415px;
