@@ -64,3 +64,58 @@
     </div>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>divincenter</title>
+</head>
+<style>
+    .bigdiv{
+        margin-top: 3px;
+        margin-bottom: 3px;
+        border: 2px solid grey;
+        height: 150px;
+        width: 100%;
+    }
+    .center{
+        height: 100px;
+        width: 100px;
+        background-color: black;
+    }
+    #method1{
+        /* You can do this by setting the display property to "flex." Then define the align-items and justify-content property to “center.” This will tell the 
+        browser to center the flex item (the div within the div) vertically and horizontally. */
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+    }
+    #method2{
+        margin: auto;
+    }
+    
+    #method4{
+        display: grid;
+        place-items: center;
+    }
+</style>
+<body>
+    <div class="bigdiv" id="method1">
+        <div class="center"></div>
+    </div>
+
+
+    <div class="bigdiv">
+        <div class="center" id="method2"></div>
+    </div>
+    <div class="bigdiv">
+        <center><div class="center"></div></center>
+    </div>
+    <div class="bigdiv" id="method4">
+        <div class="center"></div>
+    </div>
+</body>
+</html>
