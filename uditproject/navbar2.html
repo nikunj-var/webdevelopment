@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .box{
+        height:200px;
+        width:1500px;
+        background-color: aqua;
+    }
+    .mainbox{
+        height:50px;
+        width:700px;
+        background-color: black;
+        position:absolute;
+        left:400px;
+        top:70px;
+    }
+    .leftbox{
+        height:48px;
+        width:120px;
+        background-color: rgba(0, 0, 0, 0.813);
+        position: absolute;
+        left:402px;
+        top:85px;
+        transform: rotateZ(10deg);
+        border-left: 40px solid transparent;
+
+    }
+    .rightbox{
+        height:48px;
+        width:120px;
+        background-color: rgba(0, 0, 0, 0.813);
+        position: absolute;
+        left:935px;
+        top:85px;
+        transform: rotateZ(-10deg);
+        border-left: 40px solid transparent;
+    }
+    .navbar{
+        position: absolute;
+        left:120px;
+        
+    }
+    .navbar li{
+        display: inline-block;
+        color:white;
+    }
+    .navbar li a{
+        text-decoration: none;
+        color:white;
+        padding: 17px;
+        font-size: 16px;
+        
+    }
+</style>
+<body>
+    <div class="box">
+        <div class="mainbox">
+            <ul class="navbar">
+                <li><a href="#" target="_blank">HOME</a></li>
+                <li><a href="#" target="_blank">BLOG</a></li>
+                <li><a href="#" target="_blank">SERVICES</a></li>
+                <li><a href="#" target="_blank">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="leftbox"></div>
+        <div class="rightbox"></div>
+    </div>
+</body>
+</html>
