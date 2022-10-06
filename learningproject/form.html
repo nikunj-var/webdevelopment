@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<style>
+    body{
+        background-color: grey;
+        width: 100%;
+    }
+    .maindiv{
+        border: 2px solid black;
+        margin-left: 200px;
+        margin-right: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .heading{
+        margin-top: 50px;
+        font-size: 50px;
+    }
+    .heading:hover{
+        text-shadow: 2px 2px grey;
+    }
+    .text{
+        margin-top: 6px;
+        margin-bottom:40px;
+    }
+    input[type=text]{
+        outline: none;
+        width: 300px;
+        display: inline-block;
+        border: 1px solid black;
+        box-sizing: border-box;
+        padding:10px 15px;
+        margin-left: 10px;
+    }
+    input[type=text].code{
+        width: 30px;
+    }
+    label{
+        font-size: 20px;
+        margin-left: 50px;
+    }
+    #fname{
+        margin-top: 50px;
+    }
+    #gender{
+        margin-left: 140px;
+    }
+    select{
+        width: 100px;
+        padding: 12px 16px;
+        /* margin: px 30px; */
+    }
+    #number{
+        margin-left: 63px;
+    }
+    #address{
+        margin-left: 63px;
+    }
+    #address2{
+        margin-left: 170px;
+    }
+    #city{
+        width:345px;
+        margin-left: 170px;
+        margin-right: 0px;
+    }
+    #state{
+        width:345px;
+        margin-left: 0px;
+    }
+    #date{
+        margin-left: 24px;
+        height: 26px;
+    }
+    #postalcode{
+        width:345px;
+        margin-left: 170px;
+        margin-right: 0px;
+    }
+    #code{
+        width:100px;
+        margin-left: 60px;
+        margin-right: 0px;
+    }
+    #number{
+        width:345px;
+        margin-left: 0px;
+    }
+    #email{
+        margin-left: 15px;
+    }
+    h3{
+        margin-left: 170px;
+    }
+   
+    textarea{
+        margin-left: 170px;
+        width:600px;
+        height: 150px;
+    }
+    #date1{
+        margin-left: 170px;
+        width: 120px;
+        height:30px;
+    }
+    .footers{
+        height:3px;
+        color:black;
+    }
+    #areacode{
+        margin-left: 180px;
+        
+    }
+</style>
+<body>
+    <div class="maindiv">
+        <div>
+            <div class="heading">
+                <center><b>Patient Personal Details</b></center>
+            </div>
+            <div class="text">
+                <center>Fill the form below and we will get back soon to you for more updates.</center>
+            </div>
+            <hr color="black">
+            <div>
+                <center>
+                    <label for="fname"><b>FirstName</b></label>
+                    <input type="text" id="fname" name="firstname" placeholder="First Name">
+                </center>
+                <br>
+                <center>
+                    <label for="lname"><b>LastName</b></label>
+                    <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                </center>
+                <br>
+                <center>
+                    <label for="gender"><b>Gender</b></label>
+                    <select name="gender" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Not Willing to disclose</option>
+                    </select>
+                </center>
+                <br>
+                <center>
+                    <label for="number"><b>Number</b></label>
+                    <input type="text" id="code" name="number">
+                    <input type="text" id="number" name="number">
+                    <div class="footers" id="areacode">AreaCode</div>
+                </center>
+                <br>
+                <label for="dob"><b>Date Of Birth</b></label>
+                <input type="date" id="date">
+                <br>
+                <label for="address"><b>Address</b></label>
+                <input  type="text" id="address" name="address">
+                <div class="footers" id="address1">Address</div>
+                <input type="text" id="address2" name="address">
+                <br>
+                <input type="text" id="city" name="address">
+                <input type="text" id="state" name="address">
+                <br>
+                <input type="text" id="postalcode" name="address">
+                <br>
+                <label for="email"><b>E-mail Adrress</b></label>
+                <input type="text" id="email" name="email" placeholder="xyz@gmail.com">
+                <br>
+                <!-- <label for="button"><b>Have you previously attended our  facility</b></label> -->
+                <!-- <br> -->
+                <!-- <input type="radio" id="button" name="button" > -->
+                <!-- <textarea></textarea> -->
+                <h3>If Yes, state on which condition and when?</h3>
+                <br>
+                <textarea></textarea>
+                <h3>Appointment</h3>
+                <input type="date" id="date1">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
