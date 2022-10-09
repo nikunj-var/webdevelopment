@@ -84,13 +84,13 @@
 
 .frontimage{  
     /* transform: rotateZ(-6deg); */
-    margin-top:50px;
+    margin-top:20px;
     margin-left: -100px;
     height: 750px;
     width: 800px;
 }
 .mainbox2{
-    height:1500px;
+    height:1300px;
     width:100%;
     /* border:2px solid black; */
 }
@@ -99,7 +99,7 @@ center{
 }
 .collections{
     color: black;
-    font-size: 80px;    
+    font-size: 90px;    
 }
 
 .img{
@@ -140,12 +140,114 @@ center{
     border: 2px solid lightgrey;
     text-align: center;
 }
+.collectionlastline:hover{
+    background-color: lightgray;
+    color: black;
+    transition: 3s ;
+}
 a{
     text-decoration: none;
     font-size: 20px;
-    color: lightgray;
+    color: gray;
 }
 a:hover{
     color: black;
     text-decoration: underline;
 }
+.mainbox3{
+    height:2000px;
+    width: 100%;
+    color: black;
+    font-size: 90px;
+    background-color: rgb(241, 241, 241);
+}
+.firstachievement{
+    display: flex;
+    flex-direction: row;
+}
+.achieveimg1{
+    display: inline-block;
+    height: 500px;
+    width: 600px;
+    margin-top: 100px;
+    margin-left: 140px;
+    box-shadow: 10px;
+    filter: drop-shadow(20px 20px 20px grey);
+}
+
+.firstdate{
+    display: inline-block;
+    margin-top: 170px;
+    margin-left: 250px;
+    font-size: 20px;
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+}
+.hr1{
+    display: inline-block;
+    height:1px;
+    width:200px;
+    margin-top: 182px;
+    margin-left: 10px;
+    background-color: brown;
+}
+
+.firstachievedetails{
+    display: inline-block;
+    font-size: 60px;
+    color: black;
+    margin-top: 240px;
+    margin-left: -385px;
+    font-family: 'Playfair Display';
+}
+.firstachievedetails2{
+    font-size: 30px;
+    display: inline-block;
+    margin-top: 400px;
+    margin-left: -470px;
+}
+
+.secondachievement{
+    display: flex;
+    flex-direction: row;
+}
+.acheieveimg2{
+    display: inline-block;
+    height: 500px;
+    width: 600px;
+    margin-top: 100px;
+    margin-left: 200px;
+    box-shadow: 10px;
+    filter: drop-shadow(20px 20px 20px grey);
+}
+
+.seconddate{
+    display: inline-block;
+    margin-top: 240px;
+    margin-left: 200px;
+    font-size: 20px;
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+}
+.hr2{
+    display: inline-block;
+    height:1px;
+    width:200px;
+    margin-top: 250px;
+    margin-left: 10px;
+    background-color: brown;
+}
+.secondachievedetails{
+    display: inline-block;
+    font-size: 60px;
+    color: black;
+    margin-top: 300px;
+    margin-left: -380px;
+    font-family: 'Playfair Display';
+}
+.secondachievedetails2{
+    font-size: 30px;
+    display: inline-block;
+    margin-top: 500px;
+    margin-left: -470px;
+} 
