@@ -11,6 +11,7 @@
     margin-top: 25px;
     margin-left: 60px;
     border: 2px solid black;
+    display: inline-block;
 }
 
 /* Navbar */
@@ -60,7 +61,7 @@
 }
 .details{
     color: black;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 160px;
     margin-left: 100px;
 }
@@ -361,7 +362,7 @@ a:hover{
 }
 .collectionnavbar{
     position: absolute;
-    left:370px;
+    left:380px;
     top:60px;
 }
 .collectionnavbar li{
@@ -371,7 +372,7 @@ a:hover{
 .collectionnavbar li a{
     text-decoration: none;
     padding: 20px;
-    font-size: 20px; 
+    font-size: 17px; 
     color:grey; 
 }
 .collectionnavbar li a:hover{
@@ -379,10 +380,70 @@ a:hover{
     text-decoration: underline;
 }
 
+.box{
+    display: flex;
+    flex-direction: row;
+}
 .mandala{
     height:300px;
     width: 300px;
-    border: 2px solid white;
-    margin-left: 100px;
+    margin-left: 300px;
     margin-top: 30px;
+    transform: rotateZ(-10deg);
+    color: whitesmoke;
+    text-align: center;
+}
+.mandala img{
+    display: inline-block;
+    height:310px;
+    width: 310px;
+}
+/* .mandalaheading{
+    color:aliceblue;
+    font-size: 40px;
+    margin-left: 100px;
+} */
+.crafts{
+    height:300px;
+    width: 300px;
+    margin-left: 90px;
+    margin-top: 48px;
+    transform: rotateZ(-10deg);
+    color: whitesmoke;
+    text-align: center;
+}
+.crafts img{
+    display: inline-block;
+    height:300px;
+    width: 300px;
+}
+.sketches{
+        display: inline-block;
+        height:300px;
+        width: 300px;
+        margin-left: 430px;
+        margin-top: 0px;
+        transform: rotateZ(-10deg);
+        color: whitesmoke;
+        text-align: center;
+}
+.sketches img{
+        margin-top: -52px;
+        display: inline-block;
+        height:300px;
+        width: 300px;
+}
+.glowart{
+    height:300px;
+    width: 300px;
+    margin-left: 195px;
+    margin-top: -3px;
+    transform: rotateZ(-10deg);
+    color: whitesmoke;
+    text-align: center;
+}
+.glowart img{
+    display: inline-block;
+    height:300px;
+    width: 300px;
 }
