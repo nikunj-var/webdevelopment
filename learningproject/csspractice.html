@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url(https://motionarray.imgix.net/preview-150129-bNdyaFBBT8-high_0003.jpg?w=660&q=60&fit=max&auto=format);
+    }
+    .div{
+        border: 2px solid white;
+        height: 500px;
+        width: 450px;
+        display: inline-block;
+
+    }
+    p{
+        color: white;
+    }
+    .div1 p{
+        background-color: brown;
+    }
+    .innerdiv > p{
+        background-color: grey;
+    }
+    .div1 + p{
+        background-color: blue;
+    }
+</style>
+<body>
+    <div class="div1 div">
+        <p>I am learning combinators(I am using descendant selector)</p>
+        <div class="innerdiv">
+            <p>Para 1 in the inner div(I am using descendant and child selector)</p>
+            <p>Para 2 in the inner div</p>
+        </div>
+        
+            <p>Para 3 in the inner div(I am using descendant and child selector)</p>
+            <p>Para 4 in the inner div</p>
+    </div>
+    <div class="div2 div">
+        <p>I am learning pseudo-class</p>
+        <div>
+            <p>Para 1 in the inner div</p>
+            <p>Para 2 in the inner div</p>
+        </div>
+    </div>
+    <div class="div3 div">
+        <p>I am learning pseudo-elements</p>
+        <div>
+            <p>Para 1 in the inner div</p>
+            <p>Para 2 in the inner div</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs</title>
+    <link rel="stylesheet" href="artpage.css">
+</head>
+<style>
+    body{
+        background-color: rgb(236, 223, 223);
+    }
+    .contact{
+        height:580px;
+        width:500px;
+        filter: drop-shadow(20px 20px 20px rgb(184, 183, 183));
+        border: 2px solid rgb(195, 183, 183);
+        margin:auto;
+        margin-top:-65px;
+    }
+    .contactline{
+        height:100px;
+        width: 99.9%;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    .firstbox{
+        height:83px;
+        width:99.9%;
+        margin-left: 22px;
+    }
+    .secondbox{
+        height:480px;
+        width:100%;
+        background-color: white;
+    }
+    h1{
+        margin-left: 12px;
+    }
+    p{
+        margin-top: -20px;
+        margin-left: 15px;
+    }
+    label{
+        margin-left: 30px;
+    }
+    input[type="text"]{
+        margin-top: 30px;
+        margin-left: 10px;
+        height: 25px;
+        width:300px;
+    }
+    textarea{
+        height:120px;
+        width:300px;
+        margin-top: 30px;
+        margin-left: 23px;
+    }
+    .submit{
+        height:25px;
+        width: 100px;
+        border: 2px solid rgb(195, 183, 183);
+        margin:auto;
+        margin-top: 23px;
+        font-size: 17px;
+        text-align: center;
+        color:grey;
+    }
+    .line{
+        height:1.5px;
+        width:130px;
+        background-color: lightgrey;
+    }
+    #l1{
+        position: absolute;
+        bottom:110px;
+        left:115px;
+    }
+    #l2{
+        position: absolute;
+        bottom:110px;
+        left:270px;
+    }
+    .or{
+        font-size: small;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+        color:lightgrey;
+        position: absolute;
+        bottom:104px;
+        left:250px;
+    }
+    .fblogo{
+    background-size: cover;
+    position: absolute;
+    bottom:73px;
+    left:150px;
+    cursor: pointer;
+}
+.fblogo img{
+    height:20px;
+    width:17px;
+}
+</style>
+<body>
+    <div class="header">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/005/037/024/small/av-a-v-letter-logo-design-with-swoosh-and-black-lines-vector.jpg" alt="logoimage" class="logo">
+    </div>
+        <ul class="collectionnavbar">
+            <li><a href="artpage.html" target="_blank">HOME</a></li>
+            <li><a href="artcollection.html" target="_blank">COLLECTIONS</a></li>
+            <li><a href="#" target="_blank">ACHIEVEMENTS</a></li>
+            <li><a href="#" target="_blank">ABOUT</a></li>
+            <li><a href="#" target="_blank">CONTACT</a></li>
+        </ul>
+        <div class="contact">
+            <div class="firstbox">
+                <h1>Contact Us</h1>
+                <p>Please fill this form in decent manner</p>
+            </div>
+            <div class="secondbox">
+                <label for="name" class="">Full Name</label>
+                <input type="text" id="name" placeholder="enter your name">
+                <br>
+                <label for="email" class="">Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="email" placeholder="enter your email">
+                <br>
+                <label for="textbox">Message</label>
+                <textarea id="textbox"></textarea>
+                <a href="www.google.com"><div class="submit">Submit</div></a>
+                <div class="line" id="l1"></div>
+        
+                <div class="or">OR</div>
+                
+                <div class="line" id="l2"></div>
+                <div class="fblogo">
+                    <a href="https://www.facebook.com/login/" target="_blank">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANsAAADmCAMAAABruQABAAAAclBMVEUAAAD39/f9/f36+vrX19eWlpaAgIDc3NyLi4uZmZnn5+fz8/OxsbFISEgwMDDg4OC6urrGxsZaWlpAQEDu7u7MzMyjo6NoaGhwcHASEhLR0dFeXl6+vr5MTEwqKip4eHg5OTkfHx+Ojo4cHByEhIQTExOpqCYBAAAEaElEQVR4nO3d61LiQBCGYaaHgwEkBBJURFGWvf9bXNx1kZwEuqczM/i9v7a2ypp+KuBhEpKeud16vgdQDLY4gy3OYIuzH2izluLJ2sttB1e6SfbDONon8/Tgu8hmqT986kXWdt2gq9osFfe+B2W1zGq6io0mD76HZPec03c2WvseUFRB7Tba+J5O2JzabJT5nk3chpptNvU9mYP6ttk28z2Yg94bjxsNfM/lpDuq22zueypHjW3NRne+h3LUkGo243smZ02qNhv/9///zW3FRkPfIzlrS1Xb0vdIzppVbbfzdvt6w33a7Nj3QA5Lbdk28j2Qw/qwRRlscQaby5bbZLrJ1qN0nE9ONk4n+TgdrbPNdJUMH15eXazUre19UHzuAH9kyv37z+MmcZpNH2WrdWl7Lpr3fZs7MFey9bqzLftXwP5Ge9mKndmSa2UH27Nsya5sa2o3tNqEf5N0ZEsZNEPCUy3d2Fg0MxGu2oktY9HEe8Bd2HYsmnzrpgPbjEczNBUu3IGtuPqb/6ctES6sb3thHjZDW+HK+jbuYTO0EK6sbuO+2w62N+HS6raEbbPSpdVtKfclacQnlLRt/Jek7UvX1rYN+TbxBQXatjn/W4n0R7e6rc9+u9HO1dpatpxLMyTcLVG3/WIfNkMv0sWVbW/st5sh8T6esu2eb5OfCQzW5uBMYLg2+aWA4drm4sXDsFWv+LbyTeVeGDYy891wv7+72w2S1aHpdD7PCvGPtxBsJH/1NeffJv+9sS3/NukOa3vebXqHLQCb3gVk/m3CE1Hf5N8m3alrDzZ2sCkFGzvYlIKNHWxK+bfpXbQPG7vledvL66yxd/Hijm2LVVJqesHf3S0Ft8+1r054ltZKlv/N6tjGP5UIm0/b9oZtj7DBFpjtATbYArM937BtARtsgdnYFyfDBpuS7fweAmywdWsTXFMIG2wqNv7HAcK3vcMWqc2WukRhGwvP1svHpS74eEDlK45fGfy1oYPz53GENxb4JmXb+U+/Kd5/DzZ2sCkFGzvYlIKNHWxKwcYONqVgYwebUrCxg00p2NjBphRs7GBTCjZ2sCkFGzvYlIKNHWxKwcYONqVgYwebUrCxg00p2NjBphRs7GBTCjZ2sCkFGzvYlIKNHWxKwcYONqVgYwebUrCxg00p2NjBphRs7GBTCjZ2sCkFG7uBnZzJRmvzGmxxBluc/SSb/Gmw4ZSWbUb+FN9wmpiyje59T+Ss430Hjza922V13bZqs4XvkZy1sRWbsb99z+Sq46/jx3/RwPdMjtpTzWZy30M5amzrNgcPlw6hk7sMftkMvfmey0GnN2c9sd3E7yapbbQZkj+q3nfF6V7Gqc1Q7D/kstI2TclmaCR/+pq/nvrlHaiyzViz9T0hu8dJ5Ra6Fdvh0PX1HvKo2WJd2zas2YyldDfzPemVzXYjqt/3uG770FFeTJNBHCWrLKcGWbPtg2fbHocYYG23qm6x3USwxRlscQZbnMEWZ7DFGWxxdsu2P1p+cb+6PvwGAAAAAElFTkSuQmCC" alt="fblogo">
+                    </a>
+                </div>
+            </div>
+            
+            
+        </div>
+</body>
+</html>
+  
