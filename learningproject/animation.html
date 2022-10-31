@@ -1,0 +1,123 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* @keyframes div1{
+        from{background-color: black;}
+        to{
+            background-color: brown;
+        }
+    } */
+    /* @keyframes div1{
+       0% {background-color: black;}
+       25% {background-color: lightslategray;}
+       50% {background-color: gray;}
+       100% {background-color: white;}
+    } */
+    /* @keyframes div1{
+       0% {background-color: black; left:0px; top:0px;}
+       25% {background-color: lightslategray; left:200px; top:0px;}
+       50% {background-color: gray; left:200px; top: 200px;}
+       75% {background-color: brown; left:0px; top:200px;}
+       100% {background-color: white;left: 0px; top: 0px;}
+    } */
+    @keyframes div1{
+        from {left:0px;}
+        to {left: 500px;}
+    }
+    div{
+        color: white;
+        height:100px;
+        width: 100px;
+        background-color: black;
+        animation-name: div1;
+        animation-duration: 15s;
+        position: relative;
+        /* animation-iteration-count: 3; */
+        /* animation-direction: reverse; */
+        /* animation-direction: alternate; */
+        /* animation-direction: alternate-reverse; */
+    }
+
+    .div1 {animation-timing-function: linear;}
+    .div2 {animation-timing-function: ease-in;}
+    .div3 {animation-timing-function: ease-out;}
+    .div4 {animation-timing-function: ease;}
+    .div5 {animation-timing-function: ease-in-out;}
+</style>
+<body>
+    <div>Welcome to the Car Racing Competition</div>
+    <div class="div1">linear</div>
+    <div class="div2">ease-in</div>
+    <div class="div3">ease-out</div>
+    <div class="div4">ease</div>
+    <div class="div5">ease-in-out</div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            font-size: 100px;
+        }
+        @keyframes race{
+            from {top:0px;}
+            to {top:200px;}
+        }
+        div{
+            height:100px;
+            width: 100px;
+            background-color: whitesmoke;
+            float: left;
+            margin: 50px;
+            position: relative;
+            left:250px;
+            animation-name: race;
+            animation-duration: 10s;
+            animation-fill-mode: forwards;
+            color: black;
+            text-align: center;
+            font-size: 20px;
+        }
+        .div1 {animation-timing-function: linear;}
+        .div2 {animation-timing-function: ease;}
+        .div3 {animation-timing-function: ease-in;}
+        .div4 {animation-timing-function: ease-out;}
+        .div5 {animation-timing-function: ease-in-out;}
+        .line{
+            height:2px;
+            background-color: white;
+            width: 1500px;
+            position: absolute;
+            bottom: 70px;
+            left:0px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome To Car Racing Competition</h1>
+    <div class="div1">CAR1</div>
+    <div class="div2">CAR2</div>
+    <div class="div3">CAR3</div>
+    <div class="div4">CAR4</div>
+    <div class="div5">CAR5</div>
+    <span class="line"></span>
+    
+</body>
+</html>
