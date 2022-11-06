@@ -1,6 +1,6 @@
 /* header box started */
 .header{
-    height: 200px;
+    height: 150px;
     display: flex;
     flex-direction: row;
 }
@@ -11,8 +11,8 @@
     width:200px;
 }
 .logo img{
-    height: 150px;
-    width: 130px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     margin-top: 25px;
     margin-left: 60px;
@@ -72,7 +72,7 @@
 
 .collections{
     margin-top: 30px;
-    height:1000px;
+    height:1100px;
 }
 .galleryheading{
     font-size: 80px;
@@ -109,17 +109,28 @@ a{
     text-decoration: none;
 }
 .viewbutton{
+    color:black;
     text-align: center;
-    height:45px;
     width:250px;
-    border: 2px solid black;
-    padding-top:10px;
-    font-size: 20px;
+    border: 2px solid lightgray;
+    margin-top: 100px;
+    margin-left: 600px;
+    padding: 17px;
 }
 
+.viewbutton a{
+    text-decoration: none;
+    color: black
+}
+.viewbutton:hover{
+    background-color: lightgray;
+    color:white;
+ }
+.viewbutton a:hover{
+    color:white;
+ }
 .achievements{
-    height:6000px;
-    /* border: 2px solid black; */
+    height:3500px;
     background-color: rgb(202, 200, 200);
 }
 .achievementheading{
