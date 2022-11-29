@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridlayout2 </title>
+</head>
+<style>
+    .main{
+        display: grid;
+        grid-template-columns: 40% 45% 14.9%;
+        height: 750px;
+    }
+    .box-1{
+       display: grid;
+       grid-template-rows: 50% 25% 25%;
+    }
+    .inner-box1{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .inner-box1-inner{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    .div-1{
+        background-color: darkmagenta;
+    }
+    .div-5{
+        background-color: rgb(16, 172, 16);
+    }
+    .div-2{
+        background-color: rgb(195, 46, 138);
+    }
+    .box-2{
+        background-color: orange;
+    }
+    .box-3{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .div-4{
+        background-color: yellow;
+    }
+    .div-6{
+        background-color: darkslategrey;
+    }
+    .div-10{
+        background-color: rgb(74, 121, 4);
+    }
+    .div-12{
+        background-color: red;
+    }
+    .div-3{
+        background-color: orange;
+    }
+
+</style>
+<body>
+    <div class="main">
+        <div class="box-1">
+            <div class="inner-box1">
+                <div class="inner-box1-inner">
+                    <div class="div-1"></div>
+                    <div class="div-5"></div>
+                </div>
+                <div class="div-2"></div>
+            </div>
+            <div class="inner-box1"></div>
+            <div class="inner-box1"></div>
+        </div>
+        <div class="box-2">
+        </div>
+        <div class="box-3">
+            <div class="div-4"></div>
+            <div class="div-6"></div>
+            <div class="div-10"></div>
+            <div class="div-12"></div>
+        </div>
+    </div>
+</body>
+</html>

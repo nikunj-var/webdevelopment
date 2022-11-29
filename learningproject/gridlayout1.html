@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridLayout</title>
+</head>
+<style>
+    .main{
+        display: grid;
+        height:900px;
+        grid-template-rows: 20% 45% 19%;
+        border: 1px solid black;
+    }
+    .header{
+        background-color: black;
+    }
+    .mid{
+        display: grid;
+        background-color: grey;
+        grid-template-columns: 15% 45% 30%;
+    }
+    .footer{
+        background-color: burlywood;
+        border: 10px solid red;
+    }
+    .mid-col1{
+        background-color: blue;
+    }
+    .mid-col2{
+        background-color: lightblue;
+    }
+    .mid-col3{
+        background-color: purple;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="header"></div>
+        <div class="mid">
+            <div class="mid-col1"></div>
+            <div class="mid-col2"></div>
+            <div class="mid-col3"></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

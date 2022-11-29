@@ -1,0 +1,285 @@
+body{
+    font-family: Dosis, arial, sans-serif;
+}
+.main-page{
+    height:870px;
+    width:100%;
+    background-size: cover;
+    background: linear-gradient(black, rgba(44,62,80 ,0.8)),
+    url("/Users/kanahaiya/Downloads/codeYogi  project/images/pexels-nemuel-sereti-6424586.jpg") 0% 0%/cover no-repeat ;
+}
+.navbar{
+    display: flex;
+}
+ul{
+    display: flex;
+    background-color: black;
+    margin-left: auto;
+}
+li{
+    list-style: none;
+    font-family: monospace;
+    font-size: 15px;
+    /* padding-top: 14px; */
+    padding: 16px;
+}
+li a{
+    text-decoration: none;
+    color : white;
+}
+.main-head{
+    color:white;
+}
+.content{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 140px;
+}
+.name{
+    letter-spacing: 7px;
+    font-size: 70px;
+    font-family: Dosis, arial, sans-serif;
+}
+.secondline{
+    padding-top: 30px;
+}
+.moto{
+    padding-top: 70px;
+    font-size: 20px;
+    font-family: Dosis, arial, sans-serif;
+    letter-spacing: 4px;
+    color: gray;
+}
+button{
+    color:black;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgb(178, 182, 187);
+    font-family: Dosis, arial, sans-serif;
+    letter-spacing: 2px;  
+}
+.about{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Dosis, arial, sans-serif;
+}
+.what-we-do{
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+.aboutcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-para{
+    color:grey;
+    align-self: baseline;
+    align-items: center;
+    padding-top: 90px;
+    font-size: 15px;
+    width: 1150px;
+}
+.para2{
+    padding-bottom: 150px;
+}
+.ourmethodology{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Dosis, arial, sans-serif;
+}
+.metho-heading{
+    letter-spacing: 5px;
+    padding-top: 100px;
+    font-size: 18px;
+}
+.metho-content{
+    display: flex;
+    justify-content: center;
+}
+.metho-img{
+    letter-spacing: 8px;
+}
+.metho-para{
+    height:350px;
+    width: 600px;
+   /* border: 1px solid black; */
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.metho-innerpara{
+    padding-top:50px;
+    color: grey;
+}
+
+.helpbox{
+    height:350px;
+    background-color: black;
+    display: flex;
+    /* justify-content: center; */
+}
+.help-content{
+    display: flex;
+    flex-direction: column;
+    width:54%;
+    margin-right: 150px;
+    flex-shrink: 0;
+    /* align-items: center; */
+}
+.help-img{
+    margin-top: -100px;
+    margin-right: 50px;
+    height:400px;
+    width:45%;
+    background-size: cover;
+    background-image: url('/Users/kanahaiya/Downloads/codeYogi  project/images/girls-image.jpg');
+}
+.help-para1{
+   color:grey;
+   padding-top: 110px;
+   letter-spacing: 4px;
+   font-size: 18px;
+   padding-left: 130px;
+}
+.help-para2{
+    color:gray;
+    padding-top: 20px;
+    padding-left: 130px;
+}
+.button{
+    color:black;
+    background-color: grey;
+    margin-top: 15px;
+    margin-left: 130px;
+    width:150px;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+}
+.motivation{
+    padding-top: 100px;
+
+}
+.ourmotivation-box{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    letter-spacing: 10px;
+    color: black;
+}
+.moti-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.moti-text{
+    height:30px;
+    width:1200px;
+    padding-bottom: 80px;
+    color:grey;
+    font-size: 16px;
+}
+.text1{
+    padding-top: 80px;
+}
+.informed{
+    height:250px;
+    background-color: rgba(241, 241, 241, 0.994);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content1{
+    font-size: 18px;
+    letter-spacing: 4px;
+    padding-top: 70px;
+}
+.take-input{
+    display: flex;
+}
+input[type="text"]{
+    margin-top: 10px;
+    height:30px;
+    width: 250px;
+}
+.subscribe{
+    margin-top: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color:white;
+    background-color: rgb(40, 39, 39);
+}
+.content2{
+    padding-top: 50px;
+    font-size: 12px;
+    color:grey;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+}
+.contact-heading{
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.number{
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+.numbers{
+    width:300px;
+    height:100px;
+    /* border: 1px solid black; */
+    display: flex;
+}
+.icon{
+    width:13.5%;
+    /* border:1px solid black; */
+    height:100%;
+    border-radius: 29%;
+}
+.contact-data{
+    width:85%;
+    /* border: 1px solid brown; */
+    height:100%;
+    display: flex;
+    flex-direction: column;
+ 
+}
+.data-1{
+    color:grey;
+    letter-spacing: 3px;
+}
+.data-2{
+    padding-top: 3px;
+}
+.details{
+    margin-top:100px;
+    height:100px;
+    width:600px;
+ 
+    display: flex;
+}
+.detail-1{
+    width:49.9%;
+}
+input[type="text"]{
+    height: 30px;
+}
+textarea{
+    margin-top:10px;
+    margin-left:5px;
+}

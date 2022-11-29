@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<style>
+    /* .grid-container{
+        display: grid;
+        grid-template-columns: 100px 200px 300px;
+        grid-template-rows: 100px 200px 300px;
+        background-color:black;
+    } */
+    /* body{
+        display: grid;
+        grid-template-rows: calc(100% - 100px) 100px;
+        grid-template-columns: 50px calc(100% - 50px);
+        min-height: 100vh;
+      min-width: 100%;
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: 1fr 100px;
+        grid-template-areas: "sidebar content"
+                             "footer footer";
+    }
+    .main{
+        grid-area: content;
+        background-color: grey;
+    }
+    .aside{
+        grid-area: sidebar;
+        background-color: black;
+    }
+    .footer{
+        grid-area:footer;
+        background-color: red;
+    } */
+    /*===========
+ basic reset
+===========*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*=============================
+  default grid set up -> mobile first
+===============================*/
+body {
+      display: grid;
+      min-height: 100vh;
+      min-width: 100%;
+      grid-template-rows: 1fr 90px;
+      grid-template-columns: 1fr;
+			grid-template-areas: "content"
+                           "footer"
+}
+
+.main {
+  background-color: #2c3e50;
+  grid-area: content;
+}
+
+.footer {
+  background-color: #c0392b;
+  grid-area: footer;
+}
+
+
+
+.aside {
+    display: none;
+}
+.aside {
+  background-color: #7f8c8d;
+  grid-area: sidebar;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width:600px) {
+  .aside {
+    display: grid;
+  }
+
+  .aside i {
+    border: 1px solid red;
+  }
+}
+/*=============================
+  larger screens
+===============================*/
+
+@media only screen and (min-width:600px) {
+  body {
+    grid-template-columns: 40px 1fr;    
+		grid-template-areas: "sidebar  content"
+			                     "footer  footer";
+  }
+}
+
+.main__header > .img {
+  grid-area: img;
+}
+.main__header > .details {
+  grid-area: dtls;
+}
+
+.main__header {
+  display: grid;
+  grid-template-areas: "img"
+                       "dtls"; 
+}
+
+@media only screen and (max-width:600px) {
+  body {
+    justify-content: center;
+    
+  }
+  .main__header > .details {
+    text-align: center;
+  }  
+  .sm--hide {
+    display: none;
+  } 
+  .img > img {
+    width: 150px
+  }
+
+}
+
+</style>
+<body>
+    <!-- <div class="grid-container">
+
+    </div> -->
+
+    <div class="aside">
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-home"></i>
+        <i class="fa fa-search"></i>
+        <i class="fa fa-volume-up"></i>
+        <i class="fa fa-user"></i>
+        <i class="fa fa-spotify"></i>
+        <i class="fa fa-cog"></i>
+        <i class="fa fa-soundcloud"></i>
+    </div>
+    <div class="main">
+        <div class="main-header">
+            <div class="img">
+                <img src="http://bit.ly/2sc2NJd"/>
+            </div> 
+            <section class="details"> 
+                <div>
+                    <p>CattyBoard Top 100 Single Charts (11.06.36)</p>
+                    <p class="sm--hide">Unknown Artist</p>
+                    <p class="sm--hide">2016 . Charts . 100 songs</p>
+                </div>
+                <div> 
+                     <i class="fa fa-play"> &nbsp;Play all</i>
+                     <i class="fa fa-plus"> &nbsp;Add to</i>
+                     <i class="fa fa-ellipsis-h">&nbsp;&nbsp;More</i>
+                </div>
+            </section>
+        </div>
+        <div class="mainbody"></div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    li:nth-child(1){
+        order: 1;
+    }
+    ul{
+        display: flex;
+        height:200px;
+        border: 1px solid black;
+    }
+    .order{
+        margin: 10px;
+        height:100px;
+        width: 100px;
+        background-color: black;
+        color:whitesmoke;
+    }
+    .flexgrow{
+        /* flex-grow: 1; */
+        flex-shrink: 1;
+        background-color: black;
+        color:whitesmoke;
+    }
+    .flexbasis{
+        flex-basis: auto;
+        background-color: black;
+        color:whitesmoke;
+    }
+    .outer{
+            display: flex;	
+            border: 1px solid red;
+			padding: 0;
+			list-style: none;
+			background-color: #e8e8e9;
+    }
+    .inner{
+            background-color: #8cacea;
+		 	margin: 8px;
+		 	min-height: 100px;
+		 	color: #fff;
+		 	padding: 4px;
+    }
+    div:nth-child(1){
+        flex: 2 1 0;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyFuLTBnEnHSfHp2kRiJsuBaLTZC8CqRFz10tcr7N4&s);
+    }
+    div:nth-child(2){
+        flex: 1 1 0;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQom0RpH3QVOMuoDpi4oql5gHGXlX9AuNfFWlNQb5g&s);
+    }
+</style>
+<body>
+    <!-- flexbox items -->
+
+    <!-- order -->
+    <ul>
+        <li class="order">1</li>
+        <li class="order">2</li>
+        <li class="order">3</li>
+        <li class="order">4</li>
+    </ul>
+
+    <!-- flex-grow -->
+    <ul>
+        <li class="flexgrow">Hii i am flexgrow</li>
+    </ul>
+
+    <!-- flexbasis -->
+    <ul>
+        <li class="flexbasis">I am a flexbox in which flex-basis property is applied</li>
+    </ul>
+
+    <div class="outer">
+        <div class="inner"></div>
+        <div class="inner"></div>
+    </div>
+</body>
+</html>
