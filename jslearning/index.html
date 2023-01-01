@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- <h1 id="h1" onclick="changetext()">Click on me</h1> -->
+    <!-- <button onclick="displaydate()">the current time is</button>
+    <p id="demo"></p> -->
+
+
+    <!-- <button onclick="displaydate()">show current time</button>
+    <p id="demo"></p>
+    <button id="mybtn">try it</button>
+    <p id="showdate"></p>
+    <button id="alertbutton">click on me</button>
+    <button id="calculation">Calculation</button>
+    <p id="showresult"></p> -->
+
+    <button onclick="changefontsizeby(100)">click to change font size</button>
+    <div id="container"><p> HII MY font size is 100</p></div>
+    
+    <button id="btn">Button</button>
+    <div id="changecolor">I am changing my color</div>
+
+
+
+
+    <!-- button to select one time cross next time zero -->
+    <button id="marker">Click to choose marker</button>
+    <p id="printmarker"></p>
+</body>
+<script>
+    const change=document.getElementById('marker');
+    let value=0;
+    change.addEventListener("click",function(){
+        value=(value == 0)?1:0;
+        change.innerHTML=value;
+    })
+</script>
+</html>

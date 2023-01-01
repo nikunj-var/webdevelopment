@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+</head>
+<style>
+    table{
+    /* margin-top: 300px; */
+}
+td{
+    /* border:2px solid black; */
+    height:80px;
+    width:150px;
+}
+.container{
+    height:400px;
+    width:600px;
+    margin: auto;
+}
+.markers{
+    margin: auto;
+    height:100px;
+    width:200px;
+    display: flex;
+}
+.number{
+    height:80px;
+    width:150px;
+}
+.dashboard{
+    height:200px;
+    width:800px;
+    border: 1px solid black;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
+.playername{
+    display: flex;
+    border: 1px solid black;
+    height: 49.9%;
+}
+.names{
+    width: 49.9%;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 40px;
+}
+.score{
+    width: 49.9%;
+    border: 1px solid black;
+    height: 100%;
+    text-align: center;
+    /* font-size: 40px; */
+}
+</style>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td><button id="1" onclick="changemarker(id)" class="number">1</button></td>
+                <td><button id="2" onclick="changemarker(id)" class="number">2</button></td>
+                <td><button id="3" onclick="changemarker(id)" class="number">3</button></td>
+            </tr>
+            <tr>
+                <td><button id="4" onclick="changemarker(id)" class="number">4</button></td>
+                <td><button id="5" onclick="changemarker(id)" class="number">5</button></td>
+                <td><button id="6" onclick="changemarker(id)" class="number">6</button></td>
+            </tr>
+            <tr>
+                <td><button id="7" onclick="changemarker(id)" class="number">7</button></td>
+                <td><button id="8" onclick="changemarker(id)" class="number">8</button></td>
+                <td><button id="9" onclick="changemarker(id)" class="number">9</button></td>
+            </tr>
+            <p id="result"></p>
+        </table>
+    </div>
+    <div class="dashboard">
+        <div class="playername">
+            <div class="names">Player1</div>
+            <div class="names">Player2</div>
+        </div>
+        <div class="playername">
+            <div class="score">
+                <p id="score-player1"></p>
+            </div>
+            <div class="score">
+                <p id="score-player2"></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const marker=document.getElementsByClassName('number');
+    let value="O";
+    let player1=0,player2=0;
+    
+    function countscore(element){
+        if(element == "X"){
+            player1++;
+            document.getElementById('score-player1').innerHTML=player1;
+        }
+        else{
+            player2++;
+            document.getElementById('score-player2').innerHTML=player2;  
+        }
+    }
+    function doreset(){
+        let item1=document.getElementById('1');
+        let item2=document.getElementById('2');
+        let item3=document.getElementById('3');
+        let item4=document.getElementById('4');
+        let item5=document.getElementById('5');
+        let item6=document.getElementById('6');
+        let item7=document.getElementById('7');
+        let item8=document.getElementById('8');
+        let item9=document.getElementById('9');
+        item1.innerHTML=1;
+        item2.innerHTML=2;
+        item3.innerHTML=3;
+        item4.innerHTML=4;
+        item5.innerHTML=5;
+        item6.innerHTML=6;
+        item7.innerHTML=7;
+        item8.innerHTML=8;
+        item9.innerHTML=9;
+    }
+    function playerwon(){
+        let item1=document.getElementById('1');
+        let item2=document.getElementById('2');
+        let item3=document.getElementById('3');
+        let item4=document.getElementById('4');
+        let item5=document.getElementById('5');
+        let item6=document.getElementById('6');
+        let item7=document.getElementById('7');
+        let item8=document.getElementById('8');
+        let item9=document.getElementById('9');
+        let answer=document.getElementById('result');
+        if(item1.innerText == item2.innerText && item2.innerText == item3.innerText){
+           if(item1.innerText == " "){
+                return;
+           }
+           else{
+            answer.innerHTML="congratulations!";
+            doreset();
+            countscore(item1.innerText);
+           }
+        }
+        if(item4.innerText == item5.innerText && item5.innerText == item6.innerText){
+            if(item4.innerText == " "){
+                return;
+           }
+           else{
+            answer.innerHTML="congratulations!";
+            doreset();
+            countscore(item4.innerText);
+           }
+        }
+        if(item7.innerText == item8.innerText && item8.innerText == item9.innerText){
+            if(item7.innerText == " "){
+                return;
+           }
+           else{
+            answer.innerHTML="congratulations!";
+            doreset();
+            countscore(item7.innerText);
+           }
+        }
+        if(item1.innerText == item4.innerText && item4.innerText == item7.innerText){
+            if(item1.innerText == " "){
+                return;
+           }
+           else{
+            answer.innerHTML="congratulations!";
+            doreset();
+            countscore(item1.innerText);
+           }
+        }
+        if(item2.innerText == item5.innerText && item5.innerText == item8.innerText){
+            if(item2.innerText == " "){
+                return;
+           }
+           else{
+            answer.innerHTML="congratulations!";
+            doreset();
+            countscore(item2.innerText);
+           }
+        }
+        if(item3.innerText == item6.innerText && item6.innerText == item9.innerText){
+            if(item3.innerText == " "){
+                return;
+           }
+           else{
+            answer.innerHTML="congratulations!";
+            doreset();
+            countscore(item3.innerText);
+           }
+        }
+        if(item1.innerText == item5.innerText && item5.innerText == item9.innerText){
+            if(item1.innerText == " "){
+                return;
+           }
+           else{
+            answer.innerHTML="congratulations!";
+            doreset();
+            countscore(item1.innerText);
+           }
+        }
+        if(item3.innerText == item5.innerText && item5.innerText == item7.innerText){
+            if(item3.innerText == " "){
+                return;
+           }
+           else{
+            answer.innerHTML="congratulations!";
+            doreset();
+            countscore(item3.innerText);
+           }
+        }
+    }
+    function changemarker(id){
+        var item=document.getElementById(id);
+        if(item.innerText!="X" && item.innerText!="O"){
+            item.innerText=value;
+            value=(value == "O")?"X":"O";
+        }
+        else{
+            return;
+        }
+        playerwon();
+    }
+</script>
+</html>

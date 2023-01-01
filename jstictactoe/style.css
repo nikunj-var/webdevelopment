@@ -1,0 +1,49 @@
+table{
+    /* margin-top: 300px; */
+}
+td{
+    /* border:2px solid black; */
+    height:80px;
+    width:150px;
+}
+.container{
+    height:400px;
+    width:600px;
+    margin: auto;
+}
+.markers{
+    margin: auto;
+    height:100px;
+    width:200px;
+    display: flex;
+}
+.number{
+    height:80px;
+    width:150px;
+}
+.dashboard{
+    height:200px;
+    width:800px;
+    border: 1px solid black;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
+.playername{
+    display: flex;
+    border: 1px solid black;
+    height: 49.9%;
+}
+.names{
+    width: 49.9%;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 40px;
+}
+.score{
+    width: 49.9%;
+    border: 1px solid black;
+    height: 100%;
+    text-align: center;
+    /* font-size: 40px; */
+}

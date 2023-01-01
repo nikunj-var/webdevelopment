@@ -1,0 +1,28 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.home{
+    
+    width: 100%;
+    height: 600px;
+    /* background-color: grey; */
+}
+.logo{
+    height:50px;
+    width:50px;
+    /* background: url(./images/asset\ 14.svg); */
+    display: inline;
+}
+.logo img{
+    height:100px;
+    width: 100px;
+    display: inline-block;
+}
+.header{
+    display: flex;
+    justify-content: ;
+    
+}
+.navbar p{
+    padding:20px ;
+}

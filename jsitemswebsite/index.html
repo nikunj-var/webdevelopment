@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: linear-gradient(grey,black);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .header{
+        color: white;
+        height: 100px;
+        width: 600px;
+        font-size: 80px;
+        margin: auto;
+    }
+    .item-select{
+        color: wheat;
+        padding: 30px;
+        width: 500px;
+        font-size: 30px;
+        margin: auto;
+    }
+    button{
+        height: 50px;
+        width:60px;
+    }
+    .items-list{
+        display: flex;
+        margin-top: 50px;
+    }
+    .item-1{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        color:whitesmoke;
+        margin-left: 300px;
+    }
+    .item-1 img{
+        height:500px;
+        width: 300px;
+    }
+    span{
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+    .content{
+        display: none;
+        position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    }
+    .show {display: block;}
+</style>
+<body>
+    <div class="header">Online Shopping</div>
+    <div class="item-select">NO. OF ITEMS SELECTED 
+        <button onclick="myfunction()" id="itemsselected" class="dropbtn">0</button>
+        <div id="show-item" class="content">
+            <a href="#">list1</a>
+            <a href="#">list2</a>
+            <a href="#">list3</a>
+        </div>
+    </div>
+    <div class="items-list">
+        <div class="item-1">
+            <img src="https://m.media-amazon.com/images/I/71DDmftiYWL._MCnd_AC_UL320_.jpg" alt="">
+            <span>Add item to your cart&nbsp;&nbsp;<button  onclick="countitem(id)" id="item1">+</button></span> 
+        </div>
+        <div class="item-1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNeRAZpill7-TR7JdRp2D1YpQ0zvy9gpnN8lL2T_Ll2WO9RHo15Q5DLoPS8zaWUynTLQM&usqp=CAU" alt="">
+            <span>Add item to your cart&nbsp;&nbsp;<button onclick="countitem(id)"  id="item2">+</button></span> 
+        </div>
+        
+    </div>
+    <div class="items-list">
+        <div class="item-1">
+            <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1669113954-d224666blk_fr_1.jpg?crop=0.868xw:1.00xh;0.0586xw,0&resize=480:*" alt="">
+            <span>Add item to your cart&nbsp;&nbsp;<button  onclick="countitem(id)" id="item3">+</button></span> 
+        </div>
+        <div class="item-1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw3phLoYtXy7gafPGja-eYBGEHaPeQcDZKGpo_nNIqN9-KoKONtVziVC9AiLCB92bbFQ&usqp=CAU" alt="">
+            <span>Add item to your cart&nbsp;&nbsp;<button onclick="countitem(id)"  id="item4">+</button></span> 
+        </div>
+        
+    </div>
+    <div class="items-list">
+        <div class="item-1">
+            <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/dress/t/g/w/m-ut-3006-aask-original-imag7xssme44aynm-bb.jpeg?q=70" alt="">
+            <span>Add item to your cart&nbsp;&nbsp;<button onclick="countitem(id)"  id="item5">+</button></span> 
+        </div>
+        <div class="item-1">
+            <img src="https://rukminim1.flixcart.com/image/612/612/kxuqdu80/dress/y/p/k/l-515-platingdress-pink-l1-deklook-original-imaga83bqhfsv3qu.jpeg?q=70" alt="">
+            <span>Add item to your cart&nbsp;&nbsp;<button onclick="countitem(id)" id="item6">+</button></span> 
+        </div>
+        
+    </div>
+</body>
+<script>
+    let value=0;
+    const arr=[];
+
+    function countitem(id){
+        var item=document.getElementById(id);
+        if(arr.includes(item) == false){
+            value++;
+            document.getElementById('itemsselected').innerHTML=value;
+            arr.push(item);
+        }
+    }
+    function myfunction(){
+        document.getElementById('show-item').classList.toggle("show");
+    }
+    window.onclick()=function(event){
+        if(!event.target.matches('.dropbtn')){
+            
+        }
+    }
+    </script>
+</html>
