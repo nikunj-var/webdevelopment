@@ -49,31 +49,20 @@
         margin-left: 40px;
         margin-top: 10px;
     }
-    .content{
-        display: none;
-        position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    p{
+        color: red;
     }
-    .show {display: block;}
 </style>
 <body>
     <div class="header">Online Shopping</div>
     <div class="item-select">NO. OF ITEMS SELECTED 
-        <button onclick="myfunction()" id="itemsselected" class="dropbtn">0</button>
-        <div id="show-item" class="content">
-            <a href="#">list1</a>
-            <a href="#">list2</a>
-            <a href="#">list3</a>
-        </div>
+        <a href="#"><button onclick="showitems()" id="itemsselected" class="dropbtn">0</button></a>
     </div>
     <div class="items-list">
         <div class="item-1">
             <img src="https://m.media-amazon.com/images/I/71DDmftiYWL._MCnd_AC_UL320_.jpg" alt="">
             <span>Add item to your cart&nbsp;&nbsp;<button  onclick="countitem(id)" id="item1">+</button></span> 
+            <p id="show"></p>
         </div>
         <div class="item-1">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNeRAZpill7-TR7JdRp2D1YpQ0zvy9gpnN8lL2T_Ll2WO9RHo15Q5DLoPS8zaWUynTLQM&usqp=CAU" alt="">
@@ -90,7 +79,6 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw3phLoYtXy7gafPGja-eYBGEHaPeQcDZKGpo_nNIqN9-KoKONtVziVC9AiLCB92bbFQ&usqp=CAU" alt="">
             <span>Add item to your cart&nbsp;&nbsp;<button onclick="countitem(id)"  id="item4">+</button></span> 
         </div>
-        
     </div>
     <div class="items-list">
         <div class="item-1">
@@ -101,28 +89,9 @@
             <img src="https://rukminim1.flixcart.com/image/612/612/kxuqdu80/dress/y/p/k/l-515-platingdress-pink-l1-deklook-original-imaga83bqhfsv3qu.jpeg?q=70" alt="">
             <span>Add item to your cart&nbsp;&nbsp;<button onclick="countitem(id)" id="item6">+</button></span> 
         </div>
-        
     </div>
+    
+    <!-- <div id="show"></div> -->
 </body>
-<script>
-    let value=0;
-    const arr=[];
-
-    function countitem(id){
-        var item=document.getElementById(id);
-        if(arr.includes(item) == false){
-            value++;
-            document.getElementById('itemsselected').innerHTML=value;
-            arr.push(item);
-        }
-    }
-    function myfunction(){
-        document.getElementById('show-item').classList.toggle("show");
-    }
-    window.onclick()=function(event){
-        if(!event.target.matches('.dropbtn')){
-            
-        }
-    }
-    </script>
+<script src="./logic.js"></script>
 </html>
