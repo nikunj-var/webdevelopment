@@ -1,0 +1,67 @@
+Major re-write of the entire framework:
+    *Brand new look and feel
+    *Brand new logo
+    *New typogrpahy
+    *No jQuery required anymore
+    *New CSS custom properties
+    *dropping support for internet explorer
+
+
+What is a Responsive Design?
+* The Responsive Design is the approach that suggests that desgin and development should respond to the user      behaviour and environement based on the screen size, platform and orientation.
+* The practice consists of a mix of flexible grids and layouts, images and an intelligent use of CSS media queries.
+
+What is a box model?
+*In CSS,the term box model is used when talking about desgin and layouts.The CSS box model is essentially a box that wraps around every HTML element.It consists of margins ,borders ,paddings ,and the actual content.
+
+BootStrap Container layout:
+    *containers are the most basic layout element in BootStrap.
+    *containers are used to pad the content inside of them.
+    *There are the two container classes available-
+        -the .container classes provide a fixed width container.
+        -the .container-fluid class provide a full width container,spanning the entire widthof the viewport.
+        100% of the width of the screeen size.
+
+why use fixed layouts at all?
+    -there are use cases where you might want to have a fixed width- fluid?
+    -login screen
+        -username/password
+            100%
+        -fixed width and adapat to screen resolutions.
+    -static website.
+        -real estate company.
+        -restaurants.
+
+fluid-
+    *always about percentage Design
+        40% side bar.
+        60% main content.
+
+    *always contain 100% width of the device screen.
+        mobile,i-pad,desktop.
+
+BootStrap grid-
+    *to design the layout, templates and structure of the website.
+    *BootStrap grid allows upto 12 columns in a row.
+    *it consists of rows and columns
+    *divide the row into columns to achieve your layout desgin.
+    *supports various screen resolutionslikee  xs,sm,md,lg,xl.
+
+BootStrap Navbar classes:
+    *an outer wrapper- navbar
+    *for branding- navbar-brand
+    *for menu items- navbar-item
+    *for links- navbar-link
+    *for theming- navbar-light
+    *for responsiveness- navbar-expland-lg
+    *for toggle navbar menu- navbar-toggler
+    *for static position- fixed-top,fixed-bottom,sticky-top
+
+BootStrap Card classes 
+    *Card
+    *card-body
+    *card-title
+    *card-subtitle
+    *card-text
+    *card-link
+linkused- https://via.placeholder.com/150

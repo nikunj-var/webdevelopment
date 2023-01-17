@@ -1,0 +1,18 @@
+body{
+    background-color: #ddd;
+}
+.header{
+    background-color: black;
+    height: 40px;
+}
+.content{
+    min-height: 500px;
+}
+.main-content{
+    background-color: #fff;
+    min-height: 500px;
+}
+.footer{
+    height: 40px;
+    background-color: red;
+}
