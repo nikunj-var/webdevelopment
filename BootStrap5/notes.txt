@@ -64,4 +64,44 @@ BootStrap Card classes
     *card-subtitle
     *card-text
     *card-link
+
 linkused- https://via.placeholder.com/150
+
+BootStrap list classes-
+*   <ul class="list-group>
+        <li class="list-group-item">ABCDEF</li>
+    </ul>
+
+-Active 
+
+-Disabled
+
+BootStrap tables-
+    Outer wrapper- table
+    for colors- table-primary,table- secondary
+    for alternate rows colored- table-striped 
+    for hover rows- table-hover
+    for theming- navbar-light
+    for aligning data- align-middle,align-bottom
+    for responsiveness- table-Responsive
+    for breakpoint position- table-Responsive-md, table-Responsive-sm
+
+BootStrap button Classes-
+    Main class- btn
+    For colors- btn-primary,btn-secondary
+    for outline- btn-outline-primary,btn-outline-secondary
+    for sizes- btn-sm,btn-md
+    disabled state- disabled
+
+BootStrap button Group classes-
+    <div class="btn-group" role="group" aria-label="Basic Example">
+        <button type="button" class="btn btn-secondary">Left</button>
+    </div>
+
+to choose color use-color-hex.com
+
+BootStrap alert:
+    <div class="alert alert-primary" role="alert">
+        <h4 class="alert-heading">Well Done!</h4>
+        A simple primary alert with <a href="!" class="alert-link"></a>
+    </div>
