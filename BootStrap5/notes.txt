@@ -105,3 +105,63 @@ BootStrap alert:
         <h4 class="alert-heading">Well Done!</h4>
         A simple primary alert with <a href="!" class="alert-link"></a>
     </div>
+
+BootStrap-collapse
+
+<p>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Link with href
+  </a>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Button with data-bs-target
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+  </div>
+</div>
+
+BootStrap form classes-
+    *form-label
+    *form-check-input
+    *form-control
+    *input groups
+    *file upload
+    *input range
+    *validations
+
+BootStrap dropdown-
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+
+BootStrap tooltips-
+    *tooltips rely on 3rd party library popper.js for positioning.
+    *you must include popper.min.js before bootstrap.js or use bootstrap.bundle.js/bootstrap.bundle.min.js which contains popper.js in order for tooltips to work!.
+    *tooltips are opt-in for performance reasons , so you must initialize them yourself.
+
+    *you need to initialize the script one-time.
+
+BootStrap PopOvers-
+    *just like tooltips-popover used popper.js- so before using it make sure you have included in your app.
+
+BootStrap progress-
+
+BootStrap Spinners.
+
+BootStrap toasts.
+
+Why need Typography-
+    standard code throughout
+    common style guides
+    easy to understand and extend with new team members
+    headings,padding,gutters,border,background color,text color etc.
+    
