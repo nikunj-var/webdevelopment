@@ -1,0 +1,60 @@
+<!-- it is a smooth transition between two or more colors
+    two types of gradients are:
+    1. linear gradient
+        color transition is linear
+        can go up-down,diagonal,left-right
+    2. radial gradient
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #div1{
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(to right,black,gray);
+    }
+    #div2{
+        width: 200px;
+        height: 200px;
+        background: linear-gradient(45deg,black,gray);
+        margin-top: 50px;
+    }
+    #div3{
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle at top right,black,gray);
+                /* closest-side, farthest-side,top right,top left etc */
+        margin-top: 50px;
+    }
+    #div4{
+        height: 700px;
+        width: 100%;
+        background-image: url("https://hips.hearstapps.com/hmg-prod/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg?crop=1xw:0.89656xh;center,top&resize=1200:*");
+        /* position: relative; */
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .div4inner{
+        height: 700px;
+        width: 100%;
+        position: relative;
+        top:0;
+        left: 0;
+        background: linear-gradient(to bottom,transparent,transparent);
+    }
+</style>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4">
+        <div class="div4inner"></div>
+    </div>
+</body>
+</html>

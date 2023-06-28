@@ -1,0 +1,64 @@
+<!-- single selectors  - p, .class , #id -->
+<!-- combinators define relationship between two selectors.
+    1. descendant selector: ' '
+    2. child selector: '>'
+    3. adjacent sibling selector: '+'
+    4. general sibling selector: '~'
+    
+    * descendant selector syntax: selector_a selector_b.
+
+    
+    * adjacent sibling selector: selects the element matching selector_b which is right next to the elements matching selector_a .In other words adjacnet sibling.
+
+    * general sibling selector: selects all the elements matching selector_b which are the siblings of the elements matching selector_a.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* descendant selector */
+    article p{
+        font-size: 24px;
+    }
+    /* child selector */
+    article > p{
+        background-color: azure;
+    }
+    /* adjacent sibling selector */
+    div + p{
+        background-color: magenta;
+    }
+    h3 + p{
+        text-transform: uppercase;
+        background-color: blueviolet;
+    }
+    /* general sibling selector */
+    div ~ p{
+        background-color: darkgrey;
+    }
+</style>
+<body>
+    <section id="article_wrapper">
+        <article>
+            <h3>this is a heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum doloribus quidem similique blanditiis accusamus cum exercitationem officiis porro, perferendis magnam optio saepe. Recusandae tenetur, laboriosam laborum dolorem mollitia molestiae totam.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam quidem doloribus quaerat libero minima tempore? Officia repellendus consequatur, error eaque cupiditate eligendi non inventore excepturi ab ipsa fugiat ipsum ad?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore maxime consectetur dignissimos aliquid, ut sapiente tempore id aperiam provident quas, odio minus enim quod libero! Ut harum eligendi est cumque.</p>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quam impedit pariatur, repudiandae quae debitis ullam soluta et, natus nihil vel beatae? Hic eos explicabo laboriosam, vero eveniet adipisci officiis?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, corrupti. Iste beatae impedit excepturi doloremque deleniti! Eius unde dignissimos vitae, veniam numquam necessitatibus eos qui repellendus doloremque repellat magni incidunt.</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt et, alias aperiam inventore vel esse facilis maxime, ducimus eius autem quia, necessitatibus sequi! Dolor, consequuntur? Similique officiis voluptatem optio quam.</p>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui cumque consequuntur blanditiis fugit ea doloribus repellat magnam iste quam architecto quis, nostrum tempora tempore soluta natus nisi! Neque, minima cumque!</p>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quaerat, dolor officiis cupiditate illo quos quo rerum animi eligendi impedit fugiat provident soluta, voluptatum distinctio odit eius possimus. Sed, repellat!</p>
+        </article>
+    </section>
+</body>
+</html>

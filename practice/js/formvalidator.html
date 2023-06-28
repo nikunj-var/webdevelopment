@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #username-err,#email-err{
+        color: red;
+        font-size: 16px;
+        letter-spacing: 1.5;
+        margin-top: 0px;
+        margin-bottom: 24px;
+        display: none;
+    }
+</style>
+<body>
+    <header>
+        <form id="login-form">
+            <input type="text" class="username" id="username" required>
+            <p id="username-err">Please enter a valid username</p>
+            <input type="email" class="email" id="email" required>
+            <p id="email-err">Please enter a valid email</p>
+            <input type="password" id="password" class="password" required>
+            <input type="submit" type="submit" value="Login" class="btn-submit">
+        </form>
+    </header>
+</body>
+<script>
+    var username = document.getElementById('username');
+    var loginForm = document.getElementById('login-form');
+    var usernameErr = document.getElementById('username-err');
+    var email = document.getElementById('email');
+    var emailErr = document.getElementById('email-err');
+    username.addEventListener('input',function(e){
+        console.log(e.target.value);
+        var pattern = /^[\w]{6,}$/;
+        var emailpattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        var currentvalue = e.target.value;
+        console.log(pattern.test(currentvalue));
+        var valid = pattern.test(currentvalue);
+        if(!valid){
+            usernameErr.style.display = 'block';
+        }else{
+            usernameErr.style.display = 'none'
+        }
+        var validemail = e.target.value;
+        var checkvalid = emailpattern.test(validemail);
+        if(!checkvalid){
+            emailErr.style.display = 'block';
+        }else{
+            emailErr.style.display = 'none'
+        }
+        
+
+    });
+</script>
+</html>

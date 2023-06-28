@@ -1,0 +1,49 @@
+<!-- transition property allow elements to change over a specified duration rather than having them occur immediately.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        height: 300px;
+        width: 300px;
+        background-color: lightblue;
+        margin: 48px;
+        /* transition-property: background-color;
+        transition-duration: 1000ms; */
+        /* to apply animation in transition apply transition-timing-function */
+        
+        /* for single transition effect -
+        transition: transition-property transition-duration transition-timing-function ; */
+
+         /* for multiple transactions  */
+        /* transition: transition-property transition-duration transition-timing-function ,
+                    transition-property transition-duration transition-timing-function ; */
+       
+        
+        transition: background-color 3s ease-in , border-radius 3s ease-out;
+    }
+    div:hover{
+        background-color: brown;
+        border-radius: 50%;
+    }
+    #div1{
+        transition-timing-function: ease-in;
+    }
+    #div2{
+        background-color: antiquewhite;
+        transition-duration: 1000ms;
+        /* to apply animation in transition apply transition-timing-function */
+        transition-timing-function: ease-out;
+    }
+</style>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+</body>
+</html>

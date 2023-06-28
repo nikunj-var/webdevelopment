@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <section>
+            <input type="text" placeholder="enter task here">
+            <button id="add-item">Add list item</button>
+            <ul id="todo-list">
+                <li id="first-item">Item1 </li>
+                <li>Item2</li>
+            </ul>
+        </section>
+    </header>
+</body>
+<script>
+    var list = document.getElementById('todo-list');
+    var btnclick = document.getElementById('add-item');
+    var firstitem = document.getElementById('first-item');
+    function addListItem(){
+        // var newlistelement = document.createElement('li');
+        // newlistelement.appendChild(document.createTextNode('item ' + (list.childElementCount + 1)));
+        // newlistelement.id = "item"+(list.childElementCount + 1);
+        // list.appendChild(newlistelement);
+        // list.insertBefore(newlistelement,firstitem);
+        // instead of using first element id we can use firstElementChild
+        // var firstchild = list.firstElementChild;
+        // list.insertBefore(newlistelement,firstchild);
+        
+        var content = document.querySelector('input').value;
+        if(content !== undefined && content !== null && content !== ''){
+            var newlistelement = document.createElement('li');
+            newlistelement.appendChild(document.createTextNode(content));
+            newlistelement.appendChild(document.createTextNode(content));
+            list.appendChild(newlistelement);
+            document.querySelector('input').value = '';
+        }else{
+            alert('enter something');
+        }
+    }
+    btnclick.addEventListener('click',addListItem);
+// want to add item at any position
+
+</script>
+</html>

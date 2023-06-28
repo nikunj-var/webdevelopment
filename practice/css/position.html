@@ -1,0 +1,64 @@
+<!-- position - static:
+default position of HTML
+position elements in the normal order of the webpage. -->
+
+<!-- position - relative:
+helps to position element relative to their normal position.
+provides access to top,right,bottom,left prooperties. -->
+
+<!-- position - absolute:
+helps to position HTML element relative to parent element.
+parent element needs to have a position other than static or else the absolute element is positioned relative to the main HTML element -->
+
+<!-- position - fixed:
+helps to position element relative to the main HTML element This results in the elements being fixed at the defined position.
+position fixed elements are not affected by the scroll position of the webpage -->
+
+<!-- position - sticky:
+it is a combination of position relative and position fixed. it requires a condition (top,right,left,bottom) and based on this condition  it toggles between position relative and fixed -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .imagewrapper{
+        width: 700px;
+        height: 20000px;
+        background-color: black;
+        margin-left: 100px;
+        position: relative;
+    }
+    /* .imagewrapper img{
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        /* top:100px; */
+        /* left: 300px; */
+        /* right: 0;
+        bottom: 0;
+    } */ 
+    .imagewrapper img{
+        width: 400px;
+        height: 300px;
+        position: sticky;
+        top:78px;
+
+        /* top:100px; */
+        /* left: 300px;
+        right: 0;
+        bottom: 0; */
+    }
+</style>
+<body>
+    <!-- <div class="imagewrapper">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHp0lXjIfMX9OzFqEjyfPEmAIdvsYIZbD8eQ&usqp=CAU" alt="">
+    </div> -->
+    <div class="imagewrapper">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHp0lXjIfMX9OzFqEjyfPEmAIdvsYIZbD8eQ&usqp=CAU" alt="">
+    </div>
+</body>
+</html>

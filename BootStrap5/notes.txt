@@ -164,4 +164,29 @@ Why need Typography-
     common style guides
     easy to understand and extend with new team members
     headings,padding,gutters,border,background color,text color etc.
-    
+
+    *float-start,float-end
+
+
+BootStrap forms-
+*Walkthrough of BootStrap forms
+    input-
+        form label-description of the form field
+        form control-actual form field that you may be implemented
+    Radio & checkbox-
+        form check
+        form check label
+    select
+        form-select
+    floating
+        form-floating
+
+BootStrap range
+
+BootStrap figure-
+    anytime you need to display a piece of content-like an image with an optional caption,considering using a <figure>.
+    classes used- .figure,.figure-img,.figure-caption
+
+BootStrap Carousel
+    The carousel is a slideshow for cycling through a series of content,built with CSS 3D transforms and a bit of JavaScript.
+    Enhance the user experience with Carousel.

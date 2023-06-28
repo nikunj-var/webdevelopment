@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        border: 1px solid black;
+        width: 800px;
+    }
+    tr,table,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    .thirdrow{
+        font-weight: bold;
+    }
+
+    td{
+        padding: 10px;
+    }
+    .firstrow,.thirdrow{
+        background-color: rgb(129, 179, 179);
+    }
+    .secondrow{
+        padding: 0px;
+    }
+</style>
+<body>
+    <table>
+        <tr class="firstrow">
+            <td colspan="3"><b>Invoice#12345ABC</b> </td>
+            <td><b>18 Jul 2019</b></td>
+        </tr>
+        <tr >
+            <td colspan="2">
+                <div><p><b>Pay To:</b></p>
+                    <p>The Tech Park</p>
+                    <p>123 Willow Street</p>
+                    <p>Boulevard, LA-567892</p>
+                </div>
+                
+            </td>
+            <td colspan="2">
+                <div><p><b>Customer:</b></p>
+                    <p>John Lark</p>
+                    <p>Dummy Apartment</p>
+                    <p>276 Main Street</p>
+                    <p>Boulevard, LA-567892</p></div>
+                
+            </td>
+        </tr>
+        <tr class="thirdrow">
+            <td>Name/Description</td>
+            <td>Qty.</td>
+            <td>MRP</td>
+            <td>Amount</td>
+        </tr>
+        <tr>
+            <td>Biryani</td>
+            <td>3</td>
+            <td>400</td>
+            <td>1200</td>
+        </tr>
+        <tr>
+            <td>Chocolate Shake</td>
+            <td>3</td>
+            <td>200</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="background-color: rgb(129, 179, 179) ;"><b>Subtotal:</b></td>
+            <td>1800</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: rgb(129, 179, 179) ;"><b>Tax</b></td>
+            <td>10%</td>
+            <td>180</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="background-color: rgb(129, 179, 179) ;"><b>Grand Total</b></td>
+            <td>Rs 1620</td>
+        </tr>
+    </table>
+</body>
+</html>
+

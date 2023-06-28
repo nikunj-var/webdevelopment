@@ -1,0 +1,58 @@
+<!-- these properties can be used to animate many CSS properties such as color,background-color,width,height,border-radius,etc.  -->
+
+<!-- each animation needs to be defined with the @keyframes rule which is then called with the animation property.
+Each @keyframe rule defines what should happen at specific moments during the animation where ,0% at the beginning
+ of the animation and 100% at the end.
+-->
+
+<!-- syntax of animation
+    @keyframes animation_name{
+
+    }
+    -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        height: 300px;
+        width: 300px;
+        background-color: lightblue;
+        margin: 48px;
+        animation-name: newanimation;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards; /*when the animation got over it stayed at the last stage of the animation*/
+        
+    }
+    div:hover{
+        /* want to pause animation in middle of the duration use animation -play-state */
+        animation-play-state: paused;
+
+    }
+    @keyframes newanimation{
+        0%{
+            background-color: brown;
+            transform: rotateZ(0deg);
+        }
+        100%{
+            background-color: black;
+            transform: rotateZ(360deg);
+        }
+    }
+    /* shorthand for animation */
+
+    /* animation: animation-name animation-duration animation-timing-function animation-delay animation-direction animation-iteration-count animation-fill-mode animation-play-state; */
+    
+</style>
+<body>
+    <div></div>
+</body>
+</html>

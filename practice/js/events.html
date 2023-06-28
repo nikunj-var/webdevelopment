@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #btn{
+        height: 100px;
+        width: 500px;
+        margin: auto;
+        position: absolute;
+        left: 50%;
+        /* transform: translateX(-50%); */
+        top:50%;
+        transform: translate(-50%,-50%);
+    }
+</style>
+<body>
+    <header>
+        <div>
+            <button id="btn">Click Me</button>
+        </div>
+    </header>
+
+</body>
+<script>
+    var btn = document.getElementById('btn');
+    // btn.onclick = function(){
+    //     alert("button clicked");
+    // }
+
+    // function onBtnClick(){
+    //     alert("button clicked");
+    // }
+    // btn.onclick = onBtnClick;
+
+    btn.addEventListener('click',function(){
+        alert("event listener called");
+        btn.style.backgroundColor = "black";
+    })
+</script>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    h1{
+        color: white;
+        text-align: center;
+        letter-spacing: 4px;
+        font-size: 48px;
+    }
+    #grid-container{
+        display: grid;
+        /* no of columns with equal weight */
+        grid-template-columns: auto auto auto auto;
+        /* add gap between rows and columns */
+        /* grid-gap: 16px; */
+        row-gap: 20px;
+        column-gap: 20px;
+        justify-content: center;
+    }
+    .movie-poster{
+        width: 100%;
+        max-width: 400px;
+        box-sizing: border-box;
+    }
+    @media screen and (max-width:900px){
+
+       #grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto ;
+       }
+    }
+    @media screen and (max-width:400px){
+        #grid-container{
+        display: block;
+        grid-template-columns: auto  ;
+        }
+    }
+</style>
+<body>
+    <h1>Movies</h1>
+    <div id="grid-container">
+        <div><img class="movie-poster" src="https://images.pexels.com/photos/15535462/pexels-photo-15535462/free-photo-of-interior-of-beeah-tandeef-office-in-sharjah.jpeg?auto=compress&cs=tinysrgb&w=800" alt=""></div>
+        <div><img class="movie-poster"  src="https://images.pexels.com/photos/15535462/pexels-photo-15535462/free-photo-of-interior-of-beeah-tandeef-office-in-sharjah.jpeg?auto=compress&cs=tinysrgb&w=800" alt=""></div>
+        <div><img  class="movie-poster" src="https://images.pexels.com/photos/15535462/pexels-photo-15535462/free-photo-of-interior-of-beeah-tandeef-office-in-sharjah.jpeg?auto=compress&cs=tinysrgb&w=800" alt=""></div>
+        <div><img  class="movie-poster" src="https://images.pexels.com/photos/15535462/pexels-photo-15535462/free-photo-of-interior-of-beeah-tandeef-office-in-sharjah.jpeg?auto=compress&cs=tinysrgb&w=800" alt=""></div>
+        <div><img  class="movie-poster" src="https://images.pexels.com/photos/15535462/pexels-photo-15535462/free-photo-of-interior-of-beeah-tandeef-office-in-sharjah.jpeg?auto=compress&cs=tinysrgb&w=800" alt=""></div>
+        <div><img class="movie-poster"  src="https://images.pexels.com/photos/15535462/pexels-photo-15535462/free-photo-of-interior-of-beeah-tandeef-office-in-sharjah.jpeg?auto=compress&cs=tinysrgb&w=800" alt=""></div>
+        <div><img class="movie-poster"  src="https://images.pexels.com/photos/15535462/pexels-photo-15535462/free-photo-of-interior-of-beeah-tandeef-office-in-sharjah.jpeg?auto=compress&cs=tinysrgb&w=800" alt=""></div>
+        <div><img  class="movie-poster" src="https://images.pexels.com/photos/15535462/pexels-photo-15535462/free-photo-of-interior-of-beeah-tandeef-office-in-sharjah.jpeg?auto=compress&cs=tinysrgb&w=800" alt=""></div>
+        <div><img  class="movie-poster" src="https://images.pexels.com/photos/15535462/pexels-photo-15535462/free-photo-of-interior-of-beeah-tandeef-office-in-sharjah.jpeg?auto=compress&cs=tinysrgb&w=800" alt=""></div>
+        <div><img class="movie-poster"  src="https://images.pexels.com/photos/15535462/pexels-photo-15535462/free-photo-of-interior-of-beeah-tandeef-office-in-sharjah.jpeg?auto=compress&cs=tinysrgb&w=800" alt=""></div>
+        <div><img  class="movie-poster" src="https://images.pexels.com/photos/15535462/pexels-photo-15535462/free-photo-of-interior-of-beeah-tandeef-office-in-sharjah.jpeg?auto=compress&cs=tinysrgb&w=800" alt=""></div>
+        <div><img  class="movie-poster" src="https://images.pexels.com/photos/15535462/pexels-photo-15535462/free-photo-of-interior-of-beeah-tandeef-office-in-sharjah.jpeg?auto=compress&cs=tinysrgb&w=800" alt=""></div>
+    </div>
+</body>
+</html>

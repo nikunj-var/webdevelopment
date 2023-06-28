@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #bg-image{
+        height: 100vh;
+        width: 100wh;
+    }
+h1{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+    header{
+        align-items: center;
+        text-align: center;
+    }
+</style>
+<body>
+    <header>
+        <div>
+            <img id="bg-image" src="https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&w=800" alt="">
+            <h1 id="countdown">10</h1>
+        </div>
+        
+    </header>
+    <script>
+        // var countdownElement = document.getElementById('countdown');
+        // var bgImageElement = document.getElementById('bg-image');
+     
+        // setInterval(function(){
+        //     initialcountdownvalue =  initialcountdownvalue > 0 ? initialcountdownvalue-1:0;
+    
+        //     countdownElement.innerHTML = initialcountdownvalue;
+    
+        //     var backImgPath = initialcountdownvalue % 2 === 0?'https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&w=800' :'https://images.pexels.com/photos/716398/pexels-photo-716398.jpeg?auto=compress&cs=tinysrgb&w=800';
+    
+        //     bgImageElement.src = backImgPath;
+    
+        // },1000);
+    
+        var countdownElement = document.getElementById('countdown');
+       var initialcountdownvalue = countdownElement.innerHTML;
+    
+        setInterval(function(){
+            initialcountdownvalue = initialcountdownvalue > 0 ? initialcountdownvalue -1 : 0;
+    
+            countdownElement.innerHTML = initialcountdownvalue;
+            countdownElement.style.fontSize = initialcountdownvalue*100 + "px";
+        },1000);
+    </script>
+</body>
+
+</html>

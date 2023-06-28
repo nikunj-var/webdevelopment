@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>
+        <section>
+            <input type="text" id="todo-input" placeholder="enter tasks here..">
+            <br>
+            <button id="add-item">Add List Item</button>
+            <button id="update-item">Update First Item</button>
+            <button id="delete-item">Delete First Item</button>
+            <ul id="todo-list">
+                <li id="item-1">List Item 1 <i class="fa-solid fa-trash"></i></li>
+                <li id="item-2">List Item 2 <i class="fa-solid fa-trash"></i></li>
+            </ul>
+        </section>
+    </header>
+    <script>
+        var list = document.getElementById('todo-list');
+        var inputbox = document.getElementById('todo-input');
+        var btnadd = document.getElementById('add-item');
+        var btnupdate = document.getElementById('update-item');
+        var btndelete = document.getElementById('delete-item');
+
+        var currentInputValue = '';
+        inputbox.addEventListener('input',function(e){
+            currentInputValue = e.target.value;
+        });
+
+        inputbox.addEventListener('keyup',function(e){
+            if(e.keyCode === 13){
+                addListItem();
+            }
+        });
+
+        function createNewNode(){
+
+            var newlistelement = document.createElement('li');
+            var textnode = document.createTextNode(currentInputValue);
+
+            newlistelement.appendChild(textnode);
+            newlistelement.id = "item"+(list.childElementCount+1);
+
+            return newlistelement;
+
+        }
+
+        function addListItem(){
+            if(currentInputValue !== undefined && currentInputValue !== null && currentInputValue !== ''){
+                
+                var newlistelement = createNewNode();
+
+                list.appendChild(newlistelement);
+
+                inputbox.value = '';
+                currentInputValue = '';
+
+            }else{
+                alert('enter a valid item');
+            }
+        }
+
+        btnadd.addEventListener('click',addListItem);
+
+        btnupdate.addEventListener('click',function(){
+            var firstElement = list.firstElementChild;
+            var newlistelement = createNewNode();
+            list.replaceChild(newlistelement,firstElement);
+            
+        });
+
+        btndelete.addEventListener('click',function(){
+            var firstElement = list.firstElementChild;
+
+            list.removeChild(firstElement);
+        });
+    </script>
+</body>
+</html>

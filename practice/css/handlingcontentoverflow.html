@@ -1,0 +1,34 @@
+<!-- overflow happens when the content is too big to fit inside the building element the C is as overflow property controls what happens when the content is too big.
+visible
+hidden
+scroll
+auto  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .image-wrapper{
+        height:500px;
+        width: 600px;
+        /* overflow: visible; */
+        /* overflow: hidden; */
+        /* overflow: auto; */
+        overflow: scroll;
+    }
+    .image{
+        height: 560px;
+        width: 700px;
+    }
+</style>
+<body>
+    <div class="image-wrapper">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHp0lXjIfMX9OzFqEjyfPEmAIdvsYIZbD8eQ&usqp=CAU" alt="" class="image">
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!-- it is used to add styles to selectors ,but only when those selectors meet certain condition. -->
+<!-- expressed by adding a colon (:) 
+
+    links
+        :link               :active             :hover      :visited
+
+    Input
+        :checked            :in-range           :disabled   :enabled
+        :focus              :nvalid             :optional   :out-of-range
+        :read-only          :read-write         :required   :valid
+
+
+    General
+        :empty              :last-child     :first-child                :first-of-type  
+        :nth-last-child     :only-child     :nth-last-of-type           :root
+        :not(selector)      :nth-of-type    :target     :only-of-type   :lang(language)
+
+    in transparency, 1 is the most opaque and 0 is completely transparent.
+
+    
+What is the difference between first child and first of type?
+:first-child vs :first-of-type
+:first-child only selects the first element IF it is the first child of its parent. That means if it's not the first child of the parent, nothing will be selected. :first-of-type will select the first element of the type you specified. Even if it's not the first child of its parent.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        margin: auto;
+        height:700px;
+        width: 500px;
+        border: 1px solid black;
+    }
+    input{
+        height: 50px;
+        width: 100%;
+        border: 1px solid black;
+        margin: 30px 0px;
+    }
+    .name:focus{
+        background-color: bisque;
+    }
+    .email:disabled{
+        cursor: not-allowed;
+    }
+    article > p:last-of-type{
+        background-color: brown;
+    }
+    article > p:nth-of-type(3){
+        background-color: black;
+    }
+    article > p:first-of-type{
+        background-color: grey;
+    }
+    article > p:nth-child(2){
+        background-color: green;
+    }
+    article > p:nth-last-child(3){
+        background-color: blueviolet;
+    }
+</style>
+<body>
+    <!-- <form action="">
+        <input type="text" class="name" placeholder="full name">
+        <input type="email" class="email" name="" id=""placeholder="email" disabled>
+        <input type="number" class="age" name="" id=""placeholder="age">
+        <input type="password" class="password" name="" id=""placeholder="password">
+    </form> -->
+    <section id="article_wrapper">
+        <article>
+            <h3>this is a heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum doloribus quidem similique blanditiis accusamus cum exercitationem officiis porro, perferendis magnam optio saepe. Recusandae tenetur, laboriosam laborum dolorem mollitia molestiae totam.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam quidem doloribus quaerat libero minima tempore? Officia repellendus consequatur, error eaque cupiditate eligendi non inventore excepturi ab ipsa fugiat ipsum ad?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore maxime consectetur dignissimos aliquid, ut sapiente tempore id aperiam provident quas, odio minus enim quod libero! Ut harum eligendi est cumque.</p>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quam impedit pariatur, repudiandae quae debitis ullam soluta et, natus nihil vel beatae? Hic eos explicabo laboriosam, vero eveniet adipisci officiis?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, corrupti. Iste beatae impedit excepturi doloremque deleniti! Eius unde dignissimos vitae, veniam numquam necessitatibus eos qui repellendus doloremque repellat magni incidunt.</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt et, alias aperiam inventore vel esse facilis maxime, ducimus eius autem quia, necessitatibus sequi! Dolor, consequuntur? Similique officiis voluptatem optio quam.</p>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui cumque consequuntur blanditiis fugit ea doloribus repellat magnam iste quam architecto quis, nostrum tempora tempore soluta natus nisi! Neque, minima cumque!</p>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quaerat, dolor officiis cupiditate illo quos quo rerum animi eligendi impedit fugiat provident soluta, voluptatum distinctio odit eius possimus. Sed, repellat!</p>
+        </article>
+    </section>
+    <section id="article_wrapper">
+        <article>
+            <h3>this is a heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum doloribus quidem similique blanditiis accusamus cum exercitationem officiis porro, perferendis magnam optio saepe. Recusandae tenetur, laboriosam laborum dolorem mollitia molestiae totam.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam quidem doloribus quaerat libero minima tempore? Officia repellendus consequatur, error eaque cupiditate eligendi non inventore excepturi ab ipsa fugiat ipsum ad?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore maxime consectetur dignissimos aliquid, ut sapiente tempore id aperiam provident quas, odio minus enim quod libero! Ut harum eligendi est cumque.</p>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quam impedit pariatur, repudiandae quae debitis ullam soluta et, natus nihil vel beatae? Hic eos explicabo laboriosam, vero eveniet adipisci officiis?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, corrupti. Iste beatae impedit excepturi doloremque deleniti! Eius unde dignissimos vitae, veniam numquam necessitatibus eos qui repellendus doloremque repellat magni incidunt.</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt et, alias aperiam inventore vel esse facilis maxime, ducimus eius autem quia, necessitatibus sequi! Dolor, consequuntur? Similique officiis voluptatem optio quam.</p>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui cumque consequuntur blanditiis fugit ea doloribus repellat magnam iste quam architecto quis, nostrum tempora tempore soluta natus nisi! Neque, minima cumque!</p>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quaerat, dolor officiis cupiditate illo quos quo rerum animi eligendi impedit fugiat provident soluta, voluptatum distinctio odit eius possimus. Sed, repellat!</p>
+        </article>
+    </section>
+</body>
+</html>

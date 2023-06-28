@@ -1,0 +1,56 @@
+<!-- it gives container the ability to alter its items width and height to best fill the availavle space.
+    it expands item to shrink to prevent overflow. or fill available space.
+    horizontal aligned layout - inline.
+    vertical aligned layout - block.
+
+    main-axis is in the direction of flex direction 
+    cross-axis is the perpendicular of main-aixs.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    .container{
+        width: 100vw;
+        background-color: lightblue;
+        box-sizing: border-box;
+        padding: 32px;
+        display: flex;
+         justify-content: space-between; /*to produce equal space between all elements.*/
+         justify-content: space-around; /*produce equal space around all div*/
+         justify-content: flex-end;
+         justify-content: flex-start;
+         flex-wrap:no-wrap;
+         flex-wrap: wrap;
+    }
+    .item{
+        background-color: lightcoral;
+        margin-right: 16px;
+        margin-bottom: 16px;
+        padding: 32px;
+        font-size: 24px;
+        text-align: center;
+       
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item">div1</div>
+        <div class="item">div2</div>
+        <div class="item">div3</div>
+        <div class="item">div4</div>
+    </div>
+    <!-- flex-wrap -->
+  
+
+</body>
+</html>

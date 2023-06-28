@@ -1,0 +1,59 @@
+<!-- form delights us with a attribute called method  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" style="border: 1px solid black;" method="get">
+        <div>
+            UserName:<br>
+            <input type="text" name="username">
+            <br>
+        </div>
+        <div >
+            Email:<br>
+            <input type="email" name="email">
+            <br>
+        </div>
+       <div>
+            Password:<br>
+            <input type="password" name="password">
+            <br>
+        </div>
+        <div>Confirm Password:<br>
+            <input type="password" name="confirm-password">
+            <br>
+        </div>
+       <div>
+        Gender:
+        <br><input type="radio" name="male" value="male">Male</input>
+        <input type="radio" name="female" value="female" id="">Female
+        <input type="radio" name="other" value="other" id="">Other
+       </div>
+        <div>
+            Security Question:<br>
+            <select name="security-question" id="">
+                <option value="first-pet-name">What is the name of your first pet?</option>
+                <option value="first-job">What was your first job?</option>
+                <option value="nick-name">What is your nickname?</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="answer" id="" cols="30" rows="6"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" name="terms-condition" value="accept" id="">
+            I agree for terms and conditions
+        </div>
+        <input type="submit" value="login">
+    </form>
+</body>
+</html>
+
+<!-- New form elements - datalist and output -->

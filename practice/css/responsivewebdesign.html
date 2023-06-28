@@ -1,0 +1,61 @@
+<!-- it refers to the idea that your website should display  equally well for all screens sizes from monitors to phones.-->
+
+
+<!-- VIEWPORT-
+    part of the webpage that the user can currently see.
+    this is often not the same size s the rendered page in which the case browser provides scrollbars for the user to scroll around and access the content.
+    it determines how content is scaled and sized when it is rendered on different sizes.
+    we have a viewport meta tag to control the width and scaling of the viewport.
+    without this viewport metatag,mobile devices render the pages at desktop creen width,nd then scales down the pages to fit the mobile screen.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        /* dynamic size */
+        .image img{
+            width: 100%;
+            max-width: 800px;
+            height: 600px;
+            min-width: 400px;
+            /* background-repeat: no-repeat; */
+            margin: auto
+        }
+        .text-wrapper{
+            width: 100%;
+            max-width: 800px;
+            /* margin: auto; */
+            min-width: 400px;
+        }
+    </style>
+    <body>
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1655070204295-e4d3c92455bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8a2luZ2RvbSUyMGltYWdlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="">
+        </div>
+        <div class="text-wrapper">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi perferendis dolores consequatur quis illo cum beatae, ab itaque magnam obcaecati ex! Sit dolore totam eius vel quaerat sapiente, explicabo cum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi perferendis dolores consequatur quis illo cum beatae, ab itaque magnam obcaecati ex! Sit dolore totam eius vel quaerat sapiente, explicabo cum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi perferendis dolores consequatur quis illo cum beatae, ab itaque magnam obcaecati ex! Sit dolore totam eius vel quaerat sapiente, explicabo cum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi perferendis dolores consequatur quis illo cum beatae, ab itaque magnam obcaecati ex! Sit dolore totam eius vel quaerat sapiente, explicabo cum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi perferendis dolores consequatur quis illo cum beatae, ab itaque magnam obcaecati ex! Sit dolore totam eius vel quaerat sapiente, explicabo cum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi perferendis dolores consequatur quis illo cum beatae, ab itaque magnam obcaecati ex! Sit dolore totam eius vel quaerat sapiente, explicabo cum?</p>
+
+        </div>
+    </body>
+    </html>
+</body>
+</html>

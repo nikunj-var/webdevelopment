@@ -1,0 +1,56 @@
+<!-- flex-grow 
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 100vw;
+        height: 400px;
+        background-color: lightblue;
+        box-sizing: border-box;
+        padding: 32px;
+        display: flex;
+
+    }
+    .item{
+        background-color: lightcoral;
+        margin-right: 16px;
+        margin-bottom: 16px;
+        padding: 32px;
+        font-size: 24px;
+        text-align: center;
+        /* flex-grow: 1; */
+        flex-basis: 120px;
+    }
+    /* .item:nth-child(3){
+        background-color: bisque; */
+        /* flex-grow: 2; */
+        /* flex-grow: 0; */
+        /* flex-shrink: 2;   agar flex shrink karna hai but tumhare code me flex grow already ho rha h to pehle flex grow ko 0 karo uske bas flex shrink apply karo */
+        /* order: 3;
+    } */
+    .item:nth-child(even){
+        background-color: blanchedalmond;
+        align-self: center;
+    }
+    .item:nth-child(odd){
+        background-color: brown;
+        align-self: flex-start;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item">div1</div>
+        <div class="item">div2</div>
+        <div class="item">div3</div>
+        <div class="item">div4</div>
+    </div>
+</body>
+</html>
