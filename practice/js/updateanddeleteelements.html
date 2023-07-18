@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -22,9 +23,12 @@
         </section>
     </header>
     <script>
-        var list = document.getElementById('todo-list');
+        $(document).ready(function(){
+            var list = document.getElementById('todo-list');
+        // var list = $('#todo-list');
         var inputbox = document.getElementById('todo-input');
-        var btnadd = document.getElementById('add-item');
+        // var btnadd = document.getElementById('add-item');
+        var btnadd = $('#add-item');
         var btnupdate = document.getElementById('update-item');
         var btndelete = document.getElementById('delete-item');
 
@@ -66,8 +70,8 @@
             }
         }
 
-        btnadd.addEventListener('click',addListItem);
-
+        // btnadd.addEventListener('click',addListItem);
+        btnadd.on('click', addListItem);
         btnupdate.addEventListener('click',function(){
             var firstElement = list.firstElementChild;
             var newlistelement = createNewNode();
@@ -80,6 +84,17 @@
 
             list.removeChild(firstElement);
         });
+
+        // adding element using jquery
+        var listitem = <li>First List item</li>
+        var listitem2 = <li>Second List item</li>
+        var listitem3 = <li>Third List item</li>
+        var listitem4 = <li>Fourth List item</li>
+        var listitem5 = <li>Fifth List item</li>
+        list.append(listitem,listitem2,listitem3,listitem4,listitem5);
+        });
+
+        
     </script>
 </body>
 </html>
