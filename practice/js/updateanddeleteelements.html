@@ -14,6 +14,8 @@
             <input type="text" id="todo-input" placeholder="enter tasks here..">
             <br>
             <button id="add-item">Add List Item</button>
+            
+
             <button id="update-item">Update First Item</button>
             <button id="delete-item">Delete First Item</button>
             <ul id="todo-list">
@@ -29,6 +31,8 @@
         var inputbox = document.getElementById('todo-input');
         // var btnadd = document.getElementById('add-item');
         var btnadd = $('#add-item');
+        $('#add-item').css('font-size','30px');
+        $('#item-1').css('font-size','30px');
         var btnupdate = document.getElementById('update-item');
         var btndelete = document.getElementById('delete-item');
 
@@ -71,7 +75,8 @@
         }
 
         // btnadd.addEventListener('click',addListItem);
-        btnadd.on('click', addListItem);
+        // btnadd.on('click', addListItem);
+        btnadd.click(addListItem);
         btnupdate.addEventListener('click',function(){
             var firstElement = list.firstElementChild;
             var newlistelement = createNewNode();
@@ -86,15 +91,13 @@
         });
 
         // adding element using jquery
-        var listitem = <li>First List item</li>
-        var listitem2 = <li>Second List item</li>
-        var listitem3 = <li>Third List item</li>
-        var listitem4 = <li>Fourth List item</li>
-        var listitem5 = <li>Fifth List item</li>
-        list.append(listitem,listitem2,listitem3,listitem4,listitem5);
-        });
-
-        
+    //     var listitem = $("<li>").text("First List item");
+    // var listitem2 = $("<li>").text("Second List item");
+    // var listitem3 = $("<li>").text("Third List item");
+    // var listitem4 = $("<li>").text("Fourth List item");
+    // var listitem5 = $("<li>").text("Fifth List item");
+    // list.append(listitem, listitem2, listitem3, listitem4, listitem5);
+    })
     </script>
 </body>
 </html>
